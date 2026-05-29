@@ -10,7 +10,7 @@ const EMAIL = "h.guencavdi@hasi-elektronic.de";
 export function Contact() {
   const { t, lang } = useT();
   useSeo({
-    title: `${t.contact.title} — MetallBrücke`,
+    title: `${t.contact.title} — DINConnect`,
     description: t.contact.subtitle,
   });
 
@@ -65,28 +65,28 @@ export function Contact() {
                     <div className="text-xs uppercase tracking-wider text-white/60 mb-1">
                       {t.contact.direct.whatsapp}
                     </div>
-                    <div className="font-semibold group-hover:text-amber-400 transition-colors">
+                    <div className="font-semibold group-hover:text-gold-400 transition-colors">
                       +49 160 1236060
                     </div>
                   </div>
                 </a>
 
                 <a href={`mailto:${EMAIL}`} className="flex items-start gap-4 group">
-                  <span className="flex-shrink-0 h-10 w-10 rounded-lg bg-amber/10 flex items-center justify-center text-amber group-hover:bg-amber/20 transition-colors">
+                  <span className="flex-shrink-0 h-10 w-10 rounded-lg bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold/20 transition-colors">
                     <Mail className="h-5 w-5" />
                   </span>
                   <div className="min-w-0">
                     <div className="text-xs uppercase tracking-wider text-white/60 mb-1">
                       {t.contact.direct.email}
                     </div>
-                    <div className="font-semibold group-hover:text-amber-400 transition-colors break-all">
+                    <div className="font-semibold group-hover:text-gold-400 transition-colors break-all">
                       {EMAIL}
                     </div>
                   </div>
                 </a>
 
                 <div className="flex items-start gap-4">
-                  <span className="flex-shrink-0 h-10 w-10 rounded-lg bg-amber/10 flex items-center justify-center text-amber">
+                  <span className="flex-shrink-0 h-10 w-10 rounded-lg bg-gold/10 flex items-center justify-center text-gold">
                     <MapPin className="h-5 w-5" />
                   </span>
                   <div>
@@ -120,7 +120,7 @@ export function Contact() {
               key={city}
               className="flex items-center gap-3 p-4 bg-white rounded-lg border border-navy-100"
             >
-              <MapPin className="h-4 w-4 text-amber flex-shrink-0" />
+              <MapPin className="h-4 w-4 text-gold flex-shrink-0" />
               <span className="font-semibold text-navy text-sm">{city}</span>
             </div>
           ))}

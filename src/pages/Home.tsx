@@ -28,16 +28,21 @@ export function Home() {
         </div>
 
         {/* Amber accent line bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber to-transparent opacity-50" />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold to-transparent opacity-50" />
 
         <Container className="relative py-20 md:py-32 lg:py-40">
           <div className="max-w-4xl">
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-3 mb-7 px-4 py-2 bg-amber/10 border border-amber/30 rounded-full">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber animate-pulse" />
-              <span className="text-amber-300 font-semibold text-xs uppercase tracking-widest">
+            <div className="inline-flex items-center gap-3 mb-7 px-4 py-2 bg-gold/10 border border-gold/30 rounded-full">
+              <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
+              <span className="text-gold-300 font-semibold text-xs uppercase tracking-widest">
                 {t.hero.eyebrow}
               </span>
+            </div>
+
+            {/* Slogan */}
+            <div className="mb-6 font-display font-extrabold text-2xl md:text-3xl lg:text-4xl text-gold tracking-wide">
+              {t.hero.slogan}
             </div>
 
             {/* Headline */}
@@ -73,7 +78,7 @@ export function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {t.trust.items.map((item, i) => (
               <div key={i} className="text-center md:text-left">
-                <div className="font-display font-extrabold text-3xl md:text-4xl text-amber">
+                <div className="font-display font-extrabold text-3xl md:text-4xl text-gold">
                   {item.value}
                 </div>
                 <div className="mt-2 text-xs md:text-sm text-white/70 leading-snug">
@@ -84,6 +89,33 @@ export function Home() {
           </div>
         </Container>
       </section>
+
+      {/* FOUR PILLARS — Brand kompetenzen (logodaki 4 ikon) */}
+      <Section className="bg-white">
+        <div className="max-w-3xl mb-12 md:mb-16">
+          <SectionEyebrow>{t.pillars.eyebrow}</SectionEyebrow>
+          <SectionTitle>{t.pillars.title}</SectionTitle>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+          {t.pillars.items.map((p, i) => (
+            <div
+              key={p.key}
+              className="relative bg-offwhite border border-navy-100 rounded-2xl p-6 hover:border-gold transition-colors"
+            >
+              {/* Numbered badge */}
+              <div className="absolute -top-3 left-6 font-display font-extrabold text-sm bg-navy text-gold px-3 py-1 rounded-md">
+                0{i + 1}
+              </div>
+              <h3 className="mt-3 font-display font-bold text-lg md:text-xl text-navy">
+                {p.title}
+              </h3>
+              <p className="mt-3 text-anthracite/80 text-sm leading-relaxed">
+                {p.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
 
       {/* SERVICES */}
       <Section className="bg-offwhite">
@@ -130,7 +162,7 @@ export function Home() {
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {t.whyUs.items.map((item, i) => (
             <div key={i} className="relative">
-              <div className="font-display font-extrabold text-5xl md:text-6xl text-amber/30 leading-none">
+              <div className="font-display font-extrabold text-5xl md:text-6xl text-gold/30 leading-none">
                 0{i + 1}
               </div>
               <h3 className="mt-4 font-display font-bold text-xl md:text-2xl text-navy leading-tight">
@@ -155,7 +187,7 @@ export function Home() {
           {t.team.members.map((member, i) => (
             <div key={i} className="bg-white rounded-2xl p-7 md:p-8 border border-navy-100">
               {/* Placeholder avatar — gerçek fotoğraf gelene kadar baş harfler */}
-              <div className="h-16 w-16 rounded-full bg-navy text-amber font-display font-bold text-2xl flex items-center justify-center mb-5">
+              <div className="h-16 w-16 rounded-full bg-navy text-gold font-display font-bold text-2xl flex items-center justify-center mb-5">
                 {member.name
                   .split(" ")
                   .map((p) => p[0])
@@ -164,7 +196,7 @@ export function Home() {
               <h3 className="font-display font-bold text-lg text-navy">
                 {member.name}
               </h3>
-              <div className="text-amber-500 font-semibold text-sm mt-1">
+              <div className="text-gold-500 font-semibold text-sm mt-1">
                 {member.role}
               </div>
               <p className="mt-4 text-anthracite/80 text-[15px] leading-relaxed">
@@ -195,7 +227,7 @@ export function Home() {
                   lang === "tr" ? "Anında PDF, e-posta listesinden istediğinde çık" : "Sofort als PDF, jederzeit abbestellbar",
                 ].map((s, i) => (
                   <div key={i} className="flex items-start gap-3 text-white/85">
-                    <Check className="h-5 w-5 text-amber flex-shrink-0 mt-0.5" />
+                    <Check className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                     <span>{s}</span>
                   </div>
                 ))}
@@ -239,7 +271,7 @@ export function Home() {
           <div className="grid grid-cols-2 gap-3">
             {t.about.location.cities.map((city, i) => (
               <div key={i} className="flex items-center gap-3 p-4 bg-offwhite rounded-lg border border-navy-100">
-                <MapPin className="h-5 w-5 text-amber flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-gold flex-shrink-0" />
                 <span className="font-semibold text-navy text-sm md:text-base">{city}</span>
               </div>
             ))}
@@ -248,7 +280,7 @@ export function Home() {
       </Section>
 
       {/* FINAL CTA */}
-      <section className="bg-amber py-14 md:py-20">
+      <section className="bg-gold py-14 md:py-20">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display font-extrabold text-3xl md:text-4xl lg:text-5xl text-navy leading-tight">

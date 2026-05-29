@@ -1,8 +1,8 @@
 export const tr = {
   meta: {
-    title: "MetallBrücke — Türk Metal İmalatçıları için Almanya Pazarı Danışmanlığı",
+    title: "DINConnect — Türk Metal İmalatçıları için Almanya Pazarı Danışmanlığı",
     description:
-      "Almanya'da aktif çalışan Türk-Alman uzman ekibi. EN 1090, ISO 3834 belge yol haritası, teknik resim yorumlama, Alman müşteri temsili.",
+      "Verbinden. Prüfen. Zertifizieren. Türk-Alman uzman ekibi: EN 1090, ISO 3834 belge yol haritası, teknik resim yorumlama, Alman müşteri temsili.",
   },
   nav: {
     home: "Ana Sayfa",
@@ -13,7 +13,8 @@ export const tr = {
     cta: "Ücretsiz Görüşme",
   },
   hero: {
-    eyebrow: "Türkiye → Almanya",
+    eyebrow: "Türkiye → Deutschland · DIN normlarına göre",
+    slogan: "Verbinden. Prüfen. Zertifizieren.",
     title:
       "Almanya'ya kaynaklı imalat satmak isteyen Türk üreticiler için: Almanya'daki yüzünüz biziz.",
     subtitle:
@@ -28,6 +29,32 @@ export const tr = {
       { value: "0", label: "Belgeleme kuruluşu bağı" },
       { value: "3", label: "Türk-Alman uzman" },
       { value: "DE+TR", label: "Sahada iki dil, iki kültür" },
+    ],
+  },
+  pillars: {
+    eyebrow: "Dört temel yetkinlik",
+    title: "Almanya'ya uygun üretim için dört sütun",
+    items: [
+      {
+        key: "norms",
+        title: "Deutsche Normen",
+        desc: "DIN, EN, ISO standartlarına hakimiyet. Hangi standart, hangi sınıf, hangi sürümle — net.",
+      },
+      {
+        key: "welding",
+        title: "Schweißkompetenz",
+        desc: "DVS sertifikalı Schweißfachmann ekibi. WPS, PQR, kaynakçı sertifikası, prosedür kalifikasyonu.",
+      },
+      {
+        key: "audit",
+        title: "Prüfung & Abnahme",
+        desc: "Belgeleme audit hazırlığı, FAT (Factory Acceptance Test) süreç desteği, ISO 5817 kalite değerlendirmesi.",
+      },
+      {
+        key: "connection",
+        title: "Verbindung schaffen",
+        desc: "Alman müşteriyle güvenli iletişim, dil + kültür köprüsü, fuar ve toplantı eşliği.",
+      },
     ],
   },
   servicesIntro: {
@@ -257,8 +284,13 @@ export const tr = {
       {
         name: "Hamdi Güncavdi",
         role: "CAD & Operasyon",
-        bio: "Almanya endüstrisinde uzun yıllık saha deneyimi. SolidWorks ve AutoCAD ile ekibe çizim ve dokümantasyon desteği verir. Türkiye-Almanya operasyon koordinasyonunu üstlenir.",
-        skills: ["SolidWorks", "AutoCAD", "Operasyon koordinasyonu"],
+        bio: "Sakarya Üniversitesi Teknik Eğitim Fakültesi mezunu — Metal Eğitimi (Lehrer für Metallberufe, 2004). Almanya endüstrisinde uzun yıllık saha deneyimi. SolidWorks ve AutoCAD ile ekibe çizim ve dokümantasyon desteği verir. Türkiye-Almanya operasyon koordinasyonunu üstlenir.",
+        skills: [
+          "Metal Lisans (Sakarya 2004)",
+          "SolidWorks",
+          "AutoCAD",
+          "Operasyon koordinasyonu",
+        ],
         case: {
           situation:
             "Konya'lı bir tarım makineleri üreticisi 4 farklı Alman müşteriyle paralel görüşme yürütüyordu.",
@@ -347,7 +379,7 @@ export const tr = {
     story: {
       title: "Hikayemiz",
       paragraphs: [
-        "MetallBrücke, Almanya'da yıllardır endüstriyel pozisyonlarda çalışan üç Türk uzmanın gözlemlerinden doğdu. Bir tarafta uzun yıllık üretim sahası ve CAD deneyimi, diğer tarafta DVS sertifikalı kaynak üretimi — aynı sahnenin iki yanını da gördük: Türkiye'de iyi üreten ama Almanya'ya satarken iletişim, belge, tolerans sorunlarıyla boğuşan firmalar — ve Almanya'da Türk tedarikçiden memnun ama \"keşke iletişim daha kolay olsa\" diyen müşteriler.",
+        "DINConnect, Almanya'da yıllardır endüstriyel pozisyonlarda çalışan üç Türk uzmanın gözlemlerinden doğdu. Bir tarafta uzun yıllık üretim sahası ve CAD deneyimi, diğer tarafta DVS sertifikalı kaynak üretimi — aynı sahnenin iki yanını da gördük: Türkiye'de iyi üreten ama Almanya'ya satarken iletişim, belge, tolerans sorunlarıyla boğuşan firmalar — ve Almanya'da Türk tedarikçiden memnun ama \"keşke iletişim daha kolay olsa\" diyen müşteriler.",
         "İki tarafın da kaybettiği bir denklem. Türk üretici reklamasyon yiyor, Alman müşteri tedarikçi değiştiriyor. Sorun teknik kapasitede değil — bilgi, belge, dil köprüsünde.",
         "Bu köprüyü kurmak için bir araya geldik. Belge basmıyoruz, üretim yapmıyoruz. Sadece tarafsız bir köprüyüz — bilgi, dil, kültür ve kalite süreçlerinde.",
       ],
@@ -457,7 +489,7 @@ export const tr = {
     },
   },
   footer: {
-    tagline: "Türk metalinden, Alman kalitesine.",
+    tagline: "Türkiye ve Almanya — DIN standartlarına göre.",
     columns: {
       services: "Hizmetler",
       company: "Şirket",
@@ -477,7 +509,7 @@ export const tr = {
       impressum: "Impressum",
       datenschutz: "Gizlilik Politikası",
     },
-    copyright: "© 2026 MetallBrücke — Tüm hakları saklıdır.",
+    copyright: "© 2026 DINConnect — Tüm hakları saklıdır.",
   },
   cookie: {
     text: "Bu site KVKK ve DSGVO uyumlu olarak yalnızca zorunlu çerezleri kullanır. Analitik veya pazarlama çerezi yoktur.",
@@ -497,7 +529,7 @@ export const tr = {
     datenschutz: {
       title: "Gizlilik Politikası",
       intro:
-        "Bu gizlilik politikası, MetallBrücke web sitesinde toplanan verilerin nasıl işlendiğini açıklar. KVKK ve DSGVO uyumludur.",
+        "Bu gizlilik politikası, DINConnect web sitesinde toplanan verilerin nasıl işlendiğini açıklar. KVKK ve DSGVO uyumludur.",
       sections: [
         {
           title: "Hangi verileri topluyoruz?",

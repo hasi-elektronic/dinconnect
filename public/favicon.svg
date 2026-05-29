@@ -1,18 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="12" fill="#0A2540"/>
-  <!-- Üst kiriş -->
-  <rect x="10" y="22" width="44" height="3" fill="#F4A024"/>
-  <!-- Alt kiriş -->
-  <rect x="10" y="40" width="44" height="3" fill="#F4A024"/>
-  <!-- Dikey destekler -->
-  <rect x="14" y="22" width="2" height="21" fill="#F4A024"/>
-  <rect x="22" y="22" width="2" height="21" fill="#F4A024"/>
-  <rect x="31" y="22" width="2" height="21" fill="#F4A024"/>
-  <rect x="40" y="22" width="2" height="21" fill="#F4A024"/>
-  <rect x="48" y="22" width="2" height="21" fill="#F4A024"/>
-  <!-- Çapraz destek (köprü süsü) -->
-  <line x1="16" y1="40" x2="22" y2="25" stroke="#F4A024" stroke-width="1.5"/>
-  <line x1="24" y1="40" x2="31" y2="25" stroke="#F4A024" stroke-width="1.5"/>
-  <line x1="33" y1="40" x2="40" y2="25" stroke="#F4A024" stroke-width="1.5"/>
-  <line x1="42" y1="40" x2="48" y2="25" stroke="#F4A024" stroke-width="1.5"/>
+  <!-- D harfi -->
+  <text x="13" y="46" font-family="Arial Black, sans-serif" font-size="32" font-weight="900" fill="#D4A24C">D</text>
+  <!-- Köprü pilon (bağlayıcı dikey çizgi) -->
+  <rect x="32" y="14" width="2" height="36" fill="#D4A24C"/>
+  <rect x="29" y="14" width="2" height="36" fill="#D4A24C"/>
+  <rect x="35" y="14" width="2" height="36" fill="#D4A24C"/>
+  <!-- C harfi -->
+  <text x="41" y="46" font-family="Arial Black, sans-serif" font-size="32" font-weight="900" fill="#D4A24C">C</text>
 </svg>

@@ -25,7 +25,7 @@ export function LanguageSwitcher({
       <button
         type="button"
         onClick={() => switchTo("tr")}
-        className={`px-2 py-1 rounded transition-colors hover:text-amber-400 ${
+        className={`px-2 py-1 rounded transition-colors hover:text-gold-400 ${
           lang === "tr" ? "" : inactiveClass
         }`}
         aria-label="Türkçe"
@@ -39,7 +39,7 @@ export function LanguageSwitcher({
       <button
         type="button"
         onClick={() => switchTo("de")}
-        className={`px-2 py-1 rounded transition-colors hover:text-amber-400 ${
+        className={`px-2 py-1 rounded transition-colors hover:text-gold-400 ${
           lang === "de" ? "" : inactiveClass
         }`}
         aria-label="Deutsch"

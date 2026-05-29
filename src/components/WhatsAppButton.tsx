@@ -4,8 +4,8 @@
 const WHATSAPP_NUMBER = "491601236060"; // wa.me formatı (+ yok, boşluk yok)
 
 export function WhatsAppButton() {
-  const message_tr = "Merhaba MetallBrücke ekibi, danışmanlık hakkında bilgi almak istiyorum.";
-  const message_de = "Guten Tag MetallBrücke-Team, ich möchte Informationen zur Beratung.";
+  const message_tr = "Merhaba DINConnect ekibi, danışmanlık hakkında bilgi almak istiyorum.";
+  const message_de = "Guten Tag DINConnect-Team, ich möchte Informationen zur Beratung.";
 
   // URL'den dili tespit et (basit, hook'a ihtiyaç yok — bu component her zaman mount)
   const isGerman =

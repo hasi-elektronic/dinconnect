@@ -25,14 +25,14 @@ export function Footer() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-white/85 hover:text-amber-400 transition-colors"
+                className="flex items-center gap-3 text-white/85 hover:text-gold-400 transition-colors"
               >
                 <MessageCircle className="h-4 w-4 flex-shrink-0" />
                 WhatsApp +49 160 1236060
               </a>
               <a
                 href={`mailto:${EMAIL}`}
-                className="flex items-center gap-3 text-white/85 hover:text-amber-400 transition-colors break-all"
+                className="flex items-center gap-3 text-white/85 hover:text-gold-400 transition-colors break-all"
               >
                 <Mail className="h-4 w-4 flex-shrink-0" />
                 {EMAIL}
@@ -46,7 +46,7 @@ export function Footer() {
 
           {/* Leistungen */}
           <div className="lg:col-span-3">
-            <h3 className="font-display font-bold text-amber-400 uppercase text-xs tracking-widest mb-4">
+            <h3 className="font-display font-bold text-gold-400 uppercase text-xs tracking-widest mb-4">
               {t.footer.columns.services}
             </h3>
             <ul className="space-y-3 text-sm">
@@ -70,7 +70,7 @@ export function Footer() {
 
           {/* Unternehmen */}
           <div className="lg:col-span-2">
-            <h3 className="font-display font-bold text-amber-400 uppercase text-xs tracking-widest mb-4">
+            <h3 className="font-display font-bold text-gold-400 uppercase text-xs tracking-widest mb-4">
               {t.footer.columns.company}
             </h3>
             <ul className="space-y-3 text-sm">
@@ -94,7 +94,7 @@ export function Footer() {
 
           {/* Rechtliches */}
           <div className="lg:col-span-2">
-            <h3 className="font-display font-bold text-amber-400 uppercase text-xs tracking-widest mb-4">
+            <h3 className="font-display font-bold text-gold-400 uppercase text-xs tracking-widest mb-4">
               {t.footer.columns.legal}
             </h3>
             <ul className="space-y-3 text-sm">

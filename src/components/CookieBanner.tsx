@@ -3,7 +3,7 @@ import { X } from "lucide-react";
 import { useT, r } from "../i18n/useTranslation";
 import { Link } from "wouter";
 
-const KEY = "metallbruecke_cookie_ack_v1";
+const KEY = "dinconnect_cookie_ack_v1";
 
 export function CookieBanner() {
   const { t, lang } = useT();
@@ -45,14 +45,14 @@ export function CookieBanner() {
         <button
           type="button"
           onClick={accept}
-          className="px-4 py-2 bg-amber text-navy font-semibold text-sm rounded-md hover:bg-amber-500 transition-colors"
+          className="px-4 py-2 bg-gold text-navy font-semibold text-sm rounded-md hover:bg-gold-500 transition-colors"
         >
           {t.cookie.accept}
         </button>
         <Link
           href={r("datenschutz", lang)}
           onClick={accept}
-          className="text-xs text-white/70 underline hover:text-amber-400"
+          className="text-xs text-white/70 underline hover:text-gold-400"
         >
           {t.cookie.learnMore}
         </Link>

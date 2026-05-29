@@ -3,9 +3,9 @@ import type { Dict } from "./tr";
 export const de: Dict = {
   meta: {
     title:
-      "MetallBrücke — Beratung für türkische Metallverarbeiter im deutschen Markt",
+      "DINConnect — Beratung für türkische Metallverarbeiter im deutschen Markt",
     description:
-      "Türkisch-deutsches Fachteam mit aktiver Berufserfahrung in Deutschland. Zertifizierungs-Roadmap nach EN 1090 und ISO 3834, Zeichnungsinterpretation, Kundenvertretung.",
+      "Verbinden. Prüfen. Zertifizieren. Türkisch-deutsches Fachteam: Zertifizierungs-Roadmap nach EN 1090 und ISO 3834, Zeichnungsinterpretation, Kundenvertretung.",
   },
   nav: {
     home: "Startseite",
@@ -16,7 +16,8 @@ export const de: Dict = {
     cta: "Erstgespräch",
   },
   hero: {
-    eyebrow: "Türkei → Deutschland",
+    eyebrow: "Türkei → Deutschland · nach DIN-Normen",
+    slogan: "Verbinden. Prüfen. Zertifizieren.",
     title:
       "Für türkische Metallverarbeiter, die nach Deutschland exportieren wollen: Wir sind Ihr Gesicht in Deutschland.",
     subtitle:
@@ -31,6 +32,32 @@ export const de: Dict = {
       { value: "0", label: "Bindung an Zertifizierungsstellen" },
       { value: "3", label: "Türkisch-deutsche Fachkräfte" },
       { value: "DE+TR", label: "Zwei Sprachen, zwei Kulturen vor Ort" },
+    ],
+  },
+  pillars: {
+    eyebrow: "Vier Kernkompetenzen",
+    title: "Vier Säulen für deutschlandkonforme Fertigung",
+    items: [
+      {
+        key: "norms",
+        title: "Deutsche Normen",
+        desc: "Beherrschung von DIN-, EN- und ISO-Normen. Welche Norm, welche Klasse, welche Ausgabe — klar definiert.",
+      },
+      {
+        key: "welding",
+        title: "Schweißkompetenz",
+        desc: "DVS-zertifizierte Schweißfachmann-Crew. WPS, PQR, Schweißerprüfung, Verfahrensqualifizierung.",
+      },
+      {
+        key: "audit",
+        title: "Prüfung & Abnahme",
+        desc: "Audit-Vorbereitung für Zertifizierungen, FAT-Unterstützung, Schweißnahtbewertung nach ISO 5817.",
+      },
+      {
+        key: "connection",
+        title: "Verbindung schaffen",
+        desc: "Vertrauensvolle Kommunikation mit deutschen Kunden, Sprach- und Kulturbrücke, Messe- und Meetingbegleitung.",
+      },
     ],
   },
   servicesIntro: {
@@ -260,8 +287,13 @@ export const de: Dict = {
       {
         name: "Hamdi Güncavdi",
         role: "CAD & Operations",
-        bio: "Langjährige industrielle Praxis in Deutschland. Unterstützt das Team mit SolidWorks und AutoCAD bei Zeichnungen und technischer Dokumentation. Übernimmt die operative Koordination zwischen Türkei und Deutschland.",
-        skills: ["SolidWorks", "AutoCAD", "Operative Koordination"],
+        bio: "Lehrer für Metallberufe (Lisans-Abschluss, Sakarya-Universität, Fakultät für technische Bildung, 2004). Langjährige industrielle Praxis in Deutschland. Unterstützt das Team mit SolidWorks und AutoCAD bei Zeichnungen und technischer Dokumentation. Übernimmt die operative Koordination zwischen Türkei und Deutschland.",
+        skills: [
+          "Metallkunde-Lisans (Sakarya 2004)",
+          "SolidWorks",
+          "AutoCAD",
+          "Operative Koordination",
+        ],
         case: {
           situation:
             "Ein Hersteller von Landmaschinen aus Konya betreute parallel vier deutsche Kunden.",
@@ -350,7 +382,7 @@ export const de: Dict = {
     story: {
       title: "Unsere Geschichte",
       paragraphs: [
-        "MetallBrücke entstand aus den Beobachtungen dreier türkischer Fachkräfte, die seit Jahren in industriellen Positionen in Deutschland arbeiten — einerseits mit langjähriger Praxis in Fertigung und CAD, andererseits als DVS-zertifizierte Schweißfachmänner. Wir sahen beide Seiten der Bühne: türkische Firmen, die gut produzieren, aber bei Verkäufen nach Deutschland mit Kommunikation, Zertifikaten und Toleranzen kämpfen — und deutsche Kunden, die mit türkischen Lieferanten zufrieden sind, sich aber „einfachere Kommunikation\" wünschen.",
+        "DINConnect entstand aus den Beobachtungen dreier türkischer Fachkräfte, die seit Jahren in industriellen Positionen in Deutschland arbeiten — einerseits mit langjähriger Praxis in Fertigung und CAD, andererseits als DVS-zertifizierte Schweißfachmänner. Wir sahen beide Seiten der Bühne: türkische Firmen, die gut produzieren, aber bei Verkäufen nach Deutschland mit Kommunikation, Zertifikaten und Toleranzen kämpfen — und deutsche Kunden, die mit türkischen Lieferanten zufrieden sind, sich aber „einfachere Kommunikation\" wünschen.",
         "Eine Gleichung, in der beide verlieren. Türkische Hersteller bekommen Reklamationen, deutsche Kunden wechseln den Lieferanten. Das Problem liegt nicht in der technischen Fähigkeit — sondern in der Brücke aus Information, Zertifikat und Sprache.",
         "Um diese Brücke zu bauen, haben wir uns zusammengefunden. Wir stellen keine Zertifikate aus, wir produzieren nicht. Wir sind nur eine neutrale Brücke — in Information, Sprache, Kultur und Qualitätsprozessen.",
       ],
@@ -461,7 +493,7 @@ export const de: Dict = {
     },
   },
   footer: {
-    tagline: "Türkische Metallverarbeitung. Deutsche Qualitätsstandards.",
+    tagline: "Verbinden. Prüfen. Zertifizieren.",
     columns: {
       services: "Leistungen",
       company: "Unternehmen",
@@ -481,7 +513,7 @@ export const de: Dict = {
       impressum: "Impressum",
       datenschutz: "Datenschutz",
     },
-    copyright: "© 2026 MetallBrücke — Alle Rechte vorbehalten.",
+    copyright: "© 2026 DINConnect — Alle Rechte vorbehalten.",
   },
   cookie: {
     text: "Diese Seite verwendet ausschließlich notwendige Cookies (DSGVO-konform). Keine Analyse- oder Marketing-Cookies.",
@@ -501,7 +533,7 @@ export const de: Dict = {
     datenschutz: {
       title: "Datenschutz",
       intro:
-        "Diese Datenschutzerklärung beschreibt, wie auf der MetallBrücke-Website Daten verarbeitet werden. DSGVO-konform.",
+        "Diese Datenschutzerklärung beschreibt, wie auf der DINConnect-Website Daten verarbeitet werden. DSGVO-konform.",
       sections: [
         {
           title: "Welche Daten erheben wir?",

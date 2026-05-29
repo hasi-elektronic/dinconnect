@@ -8,7 +8,7 @@ import { useSeo } from "../lib/seo";
 export function Services() {
   const { t, lang } = useT();
   useSeo({
-    title: `${t.nav.services} — MetallBrücke`,
+    title: `${t.nav.services} — DINConnect`,
     description: t.servicesIntro.subtitle,
   });
 
@@ -18,7 +18,7 @@ export function Services() {
         <Container className="py-20 md:py-28">
           <div className="max-w-3xl">
             <SectionEyebrow>
-              <span className="text-amber-300">{t.servicesIntro.eyebrow}</span>
+              <span className="text-gold-300">{t.servicesIntro.eyebrow}</span>
             </SectionEyebrow>
             <h1 className="font-display font-extrabold text-4xl md:text-5xl lg:text-6xl leading-[1.1]">
               {t.servicesIntro.title}
@@ -56,7 +56,7 @@ export function Services() {
         </div>
       </Section>
 
-      <section className="bg-amber py-14 md:py-20">
+      <section className="bg-gold py-14 md:py-20">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy">

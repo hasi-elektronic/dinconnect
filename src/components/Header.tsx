@@ -25,7 +25,7 @@ export function Header() {
       <div className="mx-auto w-full max-w-container px-5 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href={r("home", lang)} onClick={closeMenu} aria-label="MetallBrücke">
+          <Link href={r("home", lang)} onClick={closeMenu} aria-label="DINConnect">
             <Logo variant="dark" />
           </Link>
 
@@ -35,7 +35,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-4 py-2 text-sm font-medium text-navy hover:text-amber-500 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-navy hover:text-gold-500 transition-colors"
               >
                 {item.label}
               </Link>

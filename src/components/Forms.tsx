@@ -5,8 +5,8 @@ import { Button } from "./ui/Button";
 // API endpoint env-aware: production'da Worker URL'i, dev'de fallback
 const API_BASE =
   typeof window !== "undefined" && window.location.hostname.includes("pages.dev")
-    ? "https://metallbruecke-api.hguencavdi.workers.dev"
-    : "https://metallbruecke-api.hguencavdi.workers.dev";
+    ? "https://dinconnect-api.hguencavdi.workers.dev"
+    : "https://dinconnect-api.hguencavdi.workers.dev";
 
 const EMAIL_FALLBACK = "h.guencavdi@hasi-elektronic.de";
 
@@ -41,7 +41,7 @@ export function LeadMagnetForm() {
 
   if (status === "success") {
     return (
-      <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-6 text-anthracite">
+      <div className="bg-gold-50 border-2 border-gold-300 rounded-xl p-6 text-anthracite">
         <p className="text-sm leading-relaxed">{t.leadMagnet.success}</p>
       </div>
     );
@@ -56,7 +56,7 @@ export function LeadMagnetForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={t.leadMagnet.emailPlaceholder}
-          className="flex-1 px-4 py-3 rounded-md border-2 border-navy-100 bg-white text-anthracite placeholder:text-navy-200 focus:border-amber focus:outline-none transition-colors"
+          className="flex-1 px-4 py-3 rounded-md border-2 border-navy-100 bg-white text-anthracite placeholder:text-navy-200 focus:border-gold focus:outline-none transition-colors"
           disabled={status === "sending"}
           aria-label="E-mail"
         />
@@ -114,7 +114,7 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-8 text-anthracite">
+      <div className="bg-gold-50 border-2 border-gold-300 rounded-xl p-8 text-anthracite">
         <h3 className="font-display font-bold text-xl text-navy mb-2">
           ✓
         </h3>
@@ -124,7 +124,7 @@ export function ContactForm() {
   }
 
   const inputClass =
-    "w-full px-4 py-3 rounded-md border-2 border-navy-100 bg-white text-anthracite placeholder:text-navy-200 focus:border-amber focus:outline-none transition-colors";
+    "w-full px-4 py-3 rounded-md border-2 border-navy-100 bg-white text-anthracite placeholder:text-navy-200 focus:border-gold focus:outline-none transition-colors";
   const labelClass = "block text-sm font-semibold text-navy mb-1.5";
 
   return (

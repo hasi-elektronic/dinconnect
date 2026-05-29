@@ -1,18 +1,26 @@
-# MetallBrücke
+# DINConnect
 
-Türk metal işletmeleri için Almanya pazarı danışmanlık sitesi.
+**Verbinden. Prüfen. Zertifizieren.**
+
+Türk metal/kaynak işletmeleri için Almanya pazarı danışmanlık sitesi.
+Türkiye ve Almanya arasında DIN/EN/ISO standartlarına göre teknik köprü.
+
+## Live
+
+- Production: https://dinconnect.com (Hostinger DNS → CF Pages)
+- CF Pages: https://dinconnect.pages.dev
 
 ## Stack
 
 - React 18 + TypeScript + Vite
-- Tailwind CSS
+- Tailwind CSS (lacivert + altın paletmark)
 - wouter (routing)
 - lucide-react (icons)
 - 2 dil: TR (default) + DE
 
 ## Deploy
 
-Cloudflare Pages. Build komutu: `npm run build` → output: `dist/`
+Cloudflare Pages. Build: `npm run build` → output: `dist/`
 
 ## Geliştirme
 
@@ -22,4 +30,4 @@ npm run dev   # http://localhost:5173
 npm run build # production
 ```
 
-© 2026 MetallBrücke
+© 2026 DINConnect

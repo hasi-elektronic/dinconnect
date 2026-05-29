@@ -33,8 +33,8 @@ export function Section({
 export function SectionEyebrow({ children }: { children: ReactNode }) {
   return (
     <div className="inline-flex items-center gap-2 mb-4">
-      <span className="h-px w-8 bg-amber" />
-      <span className="text-amber-500 font-semibold text-sm uppercase tracking-widest">
+      <span className="h-px w-8 bg-gold" />
+      <span className="text-gold-500 font-semibold text-sm uppercase tracking-widest">
         {children}
       </span>
     </div>

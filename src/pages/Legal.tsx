@@ -2,7 +2,7 @@ import { Container, Section } from "../components/ui/Layout";
 import { useT } from "../i18n/useTranslation";
 import { useSeo } from "../lib/seo";
 
-const COMPANY = "MetallBrücke";
+const COMPANY = "DINConnect";
 const RESPONSIBLE = "Hamdi Güncavdi";
 const ADDRESS_LINE_1 = "c/o Hasi Elektronic";
 const ADDRESS_LINE_2 = "Grabenstraße 18";
@@ -15,7 +15,7 @@ const PHONE = "+49 160 1236060";
 export function Impressum() {
   const { t, lang } = useT();
   useSeo({
-    title: `${t.legal.impressum.title} — MetallBrücke`,
+    title: `${t.legal.impressum.title} — DINConnect`,
     description: "Impressum / Yasal bilgiler",
   });
 
@@ -48,7 +48,7 @@ export function Impressum() {
           <p className="text-anthracite leading-relaxed mb-8">
             {lang === "tr" ? "Telefon" : "Telefon"}: {PHONE} <br />
             E-Mail:{" "}
-            <a href={`mailto:${EMAIL}`} className="text-amber-600 hover:underline">
+            <a href={`mailto:${EMAIL}`} className="text-gold-600 hover:underline">
               {EMAIL}
             </a>
           </p>
@@ -76,7 +76,7 @@ export function Impressum() {
 export function Datenschutz() {
   const { t } = useT();
   useSeo({
-    title: `${t.legal.datenschutz.title} — MetallBrücke`,
+    title: `${t.legal.datenschutz.title} — DINConnect`,
     description: t.legal.datenschutz.intro,
   });
 

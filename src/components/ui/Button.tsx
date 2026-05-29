@@ -6,7 +6,7 @@ type Size = "md" | "lg";
 
 const variantClasses: Record<Variant, string> = {
   primary:
-    "bg-amber text-navy hover:bg-amber-500 active:bg-amber-600 font-semibold shadow-sm",
+    "bg-gold text-navy hover:bg-gold-500 active:bg-gold-600 font-semibold shadow-sm",
   secondary:
     "bg-navy text-white hover:bg-navy-600 active:bg-navy-700 font-semibold",
   outline:
@@ -51,7 +51,7 @@ export function Button(props: ButtonProps) {
     children,
   } = props;
 
-  const classes = `inline-flex items-center justify-center gap-2 rounded-md transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber disabled:opacity-50 disabled:cursor-not-allowed ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
+  const classes = `inline-flex items-center justify-center gap-2 rounded-md transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold disabled:opacity-50 disabled:cursor-not-allowed ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
 
   if ("href" in props && props.href) {
     if (props.external) {

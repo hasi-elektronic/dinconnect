@@ -7,7 +7,7 @@ import { useSeo } from "../lib/seo";
 export function Resources() {
   const { t, lang } = useT();
   useSeo({
-    title: `${t.resources.title} — MetallBrücke`,
+    title: `${t.resources.title} — DINConnect`,
     description: t.resources.subtitle,
   });
 
@@ -36,7 +36,7 @@ export function Resources() {
               {t.leadMagnet.description}
             </p>
             <div className="mt-7 flex items-center gap-3 text-sm text-anthracite/70">
-              <Download className="h-4 w-4 text-amber" />
+              <Download className="h-4 w-4 text-gold" />
               <span>{lang === "tr" ? "PDF · ~ 2 MB · Türkçe" : "PDF · ~ 2 MB · auf Deutsch"}</span>
             </div>
           </div>
@@ -56,7 +56,7 @@ export function Resources() {
         </div>
 
         <div className="bg-offwhite border-2 border-dashed border-navy-100 rounded-2xl p-12 text-center">
-          <FileText className="h-12 w-12 text-amber mx-auto mb-4" />
+          <FileText className="h-12 w-12 text-gold mx-auto mb-4" />
           <h3 className="font-display font-bold text-xl text-navy mb-2">
             {t.resources.comingSoon}
           </h3>
@@ -82,7 +82,7 @@ export function Resources() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white rounded-xl p-6 border-2 border-navy-100 hover:border-amber transition-colors"
+              className="group bg-white rounded-xl p-6 border-2 border-navy-100 hover:border-gold transition-colors"
             >
               <div className="flex items-start justify-between gap-3">
                 <div>
@@ -93,7 +93,7 @@ export function Resources() {
                     {link.desc}
                   </p>
                 </div>
-                <ArrowUpRight className="h-5 w-5 text-amber-500 flex-shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <ArrowUpRight className="h-5 w-5 text-gold-500 flex-shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </div>
             </a>
           ))}

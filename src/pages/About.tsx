@@ -6,7 +6,7 @@ import { useSeo } from "../lib/seo";
 export function About() {
   const { t, lang } = useT();
   useSeo({
-    title: `${t.about.title} — MetallBrücke`,
+    title: `${t.about.title} — DINConnect`,
     description: t.about.subtitle,
   });
 
@@ -55,11 +55,11 @@ export function About() {
             >
               {/* Header: avatar + name */}
               <div className="p-7 md:p-8 pb-5">
-                <div className="h-16 w-16 rounded-full bg-navy text-amber font-display font-bold text-2xl flex items-center justify-center mb-5">
+                <div className="h-16 w-16 rounded-full bg-navy text-gold font-display font-bold text-2xl flex items-center justify-center mb-5">
                   {member.name.split(" ").map((p) => p[0]).join("")}
                 </div>
                 <h3 className="font-display font-bold text-lg text-navy">{member.name}</h3>
-                <div className="text-amber-500 font-semibold text-sm mt-1">{member.role}</div>
+                <div className="text-gold-500 font-semibold text-sm mt-1">{member.role}</div>
                 <p className="mt-4 text-anthracite/80 text-[15px] leading-relaxed">{member.bio}</p>
 
                 {/* Skills chips */}
@@ -72,7 +72,7 @@ export function About() {
                       {member.skills.map((skill, si) => (
                         <span
                           key={si}
-                          className="inline-block px-2.5 py-1 bg-amber-50 border border-amber-200 text-amber-700 text-[11px] font-semibold rounded"
+                          className="inline-block px-2.5 py-1 bg-gold-50 border border-gold-200 text-gold-700 text-[11px] font-semibold rounded"
                         >
                           {skill}
                         </span>
@@ -84,7 +84,7 @@ export function About() {
 
               {/* Case study */}
               <div className="mt-auto p-6 md:p-7 bg-navy-50/60 border-t border-navy-100">
-                <div className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-4">
+                <div className="text-xs font-bold uppercase tracking-widest text-gold-600 mb-4">
                   {t.team.caseLabel}
                 </div>
                 <dl className="space-y-3 text-sm">
@@ -136,7 +136,7 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {t.about.values.items.map((item, i) => (
             <div key={i}>
-              <div className="font-display font-extrabold text-5xl text-amber/30 leading-none">
+              <div className="font-display font-extrabold text-5xl text-gold/30 leading-none">
                 0{i + 1}
               </div>
               <h3 className="mt-4 font-display font-bold text-xl text-navy">{item.title}</h3>
@@ -156,7 +156,7 @@ export function About() {
             <SectionTitle>{t.about.location.title}</SectionTitle>
             <div className="mt-7 p-6 bg-navy text-white rounded-xl">
               <div className="flex items-start gap-3">
-                <MapPin className="h-6 w-6 text-amber flex-shrink-0 mt-1" />
+                <MapPin className="h-6 w-6 text-gold flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-display font-bold text-lg">
                     {lang === "tr" ? "Operasyon Merkezi" : "Operationszentrum"}
@@ -179,7 +179,7 @@ export function About() {
                   key={city}
                   className="flex items-center gap-3 p-4 bg-white rounded-lg border border-navy-100"
                 >
-                  <MapPin className="h-5 w-5 text-amber flex-shrink-0" />
+                  <MapPin className="h-5 w-5 text-gold flex-shrink-0" />
                   <span className="font-semibold text-navy text-sm md:text-base">{city}</span>
                 </div>
               ))}
@@ -207,7 +207,7 @@ function CaseRow({
   const dotClass = danger
     ? "bg-red-100 text-red-700"
     : accent
-      ? "bg-amber-100 text-amber-700"
+      ? "bg-gold-100 text-gold-700"
       : "bg-navy-100 text-navy-600";
   return (
     <div className="flex gap-3">

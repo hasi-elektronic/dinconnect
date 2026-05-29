@@ -27,7 +27,7 @@ function NotFound() {
   const [, navigate] = useLocation();
   return (
     <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-5">
-      <div className="font-display font-extrabold text-7xl text-amber">404</div>
+      <div className="font-display font-extrabold text-7xl text-gold">404</div>
       <p className="mt-4 text-anthracite/80 max-w-md">
         Sayfa bulunamadı / Seite nicht gefunden
       </p>

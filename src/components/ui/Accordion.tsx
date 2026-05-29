@@ -25,7 +25,7 @@ export function Accordion({ items }: { items: readonly AccordionItem[] }) {
                 {item.q}
               </span>
               <ChevronDown
-                className={`mt-1 h-5 w-5 flex-shrink-0 text-amber transition-transform duration-300 ${
+                className={`mt-1 h-5 w-5 flex-shrink-0 text-gold transition-transform duration-300 ${
                   isOpen ? "rotate-180" : ""
                 }`}
                 aria-hidden="true"

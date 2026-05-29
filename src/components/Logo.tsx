@@ -1,45 +1,62 @@
 type LogoProps = {
   variant?: "dark" | "light";
   className?: string;
+  /** Size variant — "compact" header için sadece D|C, "full" footer için tam logo */
+  size?: "compact" | "full";
 };
 
 /**
- * MetallBrücke logo
- * - Sol: köprü kafes yapısı simgesi (çelik kiriş + dikey destekler + çapraz)
- * - Sağ: "MetallBrücke" wordmark
+ * DINConnect logo
+ * Header'da kompakt versiyon (sadece simge + DINConnect yazısı)
+ * Footer'da full versiyon (slogan dahil)
  *
- * Sembolizm: Türkiye-Almanya köprüsü, çelik/metal işleme,
- *   Alman mühendislik geometrisi (Truss-Brücke / kafes köprü)
+ * Renk: lacivert (D|C harfleri için kompakt SVG fallback) + altın detaylar
+ * Asıl logo görseli: /dinconnect-logo.jpg (altın 3D, slogan dahil)
  */
-export function Logo({ variant = "dark", className = "" }: LogoProps) {
+export function Logo({ variant = "dark", className = "", size = "compact" }: LogoProps) {
   const textColor = variant === "dark" ? "#0A2540" : "#FFFFFF";
-  const accent = "#F4A024";
+  const accentGold = "#D4A24C";
 
+  if (size === "full") {
+    // Footer / hero için tam logo — JPG kullan
+    return (
+      <img
+        src="/dinconnect-logo.jpg"
+        alt="DINConnect — Verbinden. Prüfen. Zertifizieren."
+        className={`block w-full ${className}`}
+        loading="lazy"
+      />
+    );
+  }
+
+  // Compact: header için minimalist SVG + wordmark
   return (
-    <div className={`inline-flex items-center gap-3 ${className}`}>
-      {/* Köprü simgesi */}
+    <div className={`inline-flex items-center gap-2.5 ${className}`}>
+      {/* D|C simgesi (sade SVG, köprü pilonları altın) */}
       <svg
         viewBox="0 0 56 40"
-        width="44"
-        height="32"
+        width="40"
+        height="28"
         fill="none"
         aria-hidden="true"
       >
-        {/* Üst kiriş */}
-        <rect x="2" y="10" width="52" height="3" fill={accent} />
-        {/* Alt kiriş */}
-        <rect x="2" y="29" width="52" height="3" fill={accent} />
-        {/* Dikey destekler */}
-        <rect x="6" y="10" width="2" height="22" fill={accent} />
-        <rect x="16" y="10" width="2" height="22" fill={accent} />
-        <rect x="27" y="10" width="2" height="22" fill={accent} />
-        <rect x="38" y="10" width="2" height="22" fill={accent} />
-        <rect x="48" y="10" width="2" height="22" fill={accent} />
-        {/* Çapraz kafes elemanları */}
-        <line x1="8" y1="29" x2="16" y2="13" stroke={accent} strokeWidth="1.5" />
-        <line x1="18" y1="29" x2="27" y2="13" stroke={accent} strokeWidth="1.5" />
-        <line x1="29" y1="29" x2="38" y2="13" stroke={accent} strokeWidth="1.5" />
-        <line x1="40" y1="29" x2="48" y2="13" stroke={accent} strokeWidth="1.5" />
+        {/* D harfi */}
+        <path
+          d="M4 6 L4 34 L14 34 C20 34 24 28 24 20 C24 12 20 6 14 6 Z"
+          fill={textColor}
+        />
+        {/* Köprü pilonları (orta — D ile C arasında ince altın dikey çizgiler) */}
+        <rect x="27" y="6" width="1.6" height="28" fill={accentGold} />
+        <rect x="30" y="6" width="1.6" height="28" fill={accentGold} />
+        <rect x="33" y="6" width="1.6" height="28" fill={accentGold} />
+        {/* C harfi */}
+        <path
+          d="M52 12 C48 8 44 6 40 6 C35 6 32 12 32 20 C32 28 35 34 40 34 C44 34 48 32 52 28"
+          stroke={textColor}
+          strokeWidth="5"
+          fill="none"
+          strokeLinecap="round"
+        />
       </svg>
 
       {/* Wordmark */}
@@ -47,7 +64,7 @@ export function Logo({ variant = "dark", className = "" }: LogoProps) {
         className="font-display font-extrabold text-xl md:text-2xl tracking-tight leading-none"
         style={{ color: textColor }}
       >
-        Metall<span style={{ color: accent }}>Brücke</span>
+        DIN<span style={{ color: accentGold }}>Connect</span>
       </span>
     </div>
   );

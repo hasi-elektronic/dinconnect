@@ -13,70 +13,70 @@ export const tr = {
     cta: "Ücretsiz Görüşme",
   },
   hero: {
-    eyebrow: "Türkiye → Deutschland · DIN normlarına göre",
+    eyebrow: "Türkiye → Almanya · Alman normlarıyla",
     slogan: "Verbinden. Prüfen. Zertifizieren.",
     title:
-      "Almanya'ya kaynaklı imalat satmak isteyen Türk üreticiler için: Almanya'daki yüzünüz biziz.",
+      "Almanya'ya iş yapan Türk imalatçıların Almanya'daki sağ kolu.",
     subtitle:
-      "Almanya'da aktif endüstriyel pozisyonda çalışan Türk-Alman uzman ekibi. Belgeden teknik resme, kalite kontrolden Alman müşteriyle iletişime kadar tüm süreci sizinle birlikte yönetiyoruz.",
-    ctaPrimary: "Ücretsiz Ön Görüşme",
-    ctaSecondary: "Hizmetlerimiz",
+      "Almanya'da fiilen sanayide çalışan bir Türk-Alman ekibiz. Belge sürecinden teknik resmin okunmasına, kalite kontrolden Alman müşteriyle yazışmaya kadar işin her adımında yanınızdayız.",
+    ctaPrimary: "Ücretsiz ön görüşme",
+    ctaSecondary: "Ne yapıyoruz?",
   },
   trust: {
-    title: "Bağımsız. Sahadan. Sonuç odaklı.",
+    title: "Bağımsızız. Sahadan geliyoruz. Sonuca bakıyoruz.",
     items: [
-      { value: "12+", label: "Yıl Alman endüstrisinde aktif" },
-      { value: "0", label: "Belgeleme kuruluşu bağı" },
+      { value: "12+", label: "Yıldır Alman sanayisinin içindeyiz" },
+      { value: "0", label: "Belge kuruluşlarıyla çıkar ilişkimiz" },
       { value: "3", label: "Türk-Alman uzman" },
       { value: "DE+TR", label: "Sahada iki dil, iki kültür" },
     ],
   },
   pillars: {
-    eyebrow: "Dört temel yetkinlik",
-    title: "Almanya'ya uygun üretim için dört sütun",
+    eyebrow: "Dört temel alan",
+    title: "Almanya'ya uygun üretimin dört direği",
     items: [
       {
         key: "norms",
-        title: "Deutsche Normen",
-        desc: "DIN, EN, ISO standartlarına hakimiyet. Hangi standart, hangi sınıf, hangi sürümle — net.",
+        title: "Alman Normları",
+        desc: "DIN, EN ve ISO standartlarına tam hakimiyet. Hangi iş için hangi standart, hangi sınıf, hangi sürüm — kafanızda soru kalmaz.",
       },
       {
         key: "welding",
-        title: "Schweißkompetenz",
-        desc: "DVS sertifikalı Schweißfachmann ekibi. WPS, PQR, kaynakçı sertifikası, prosedür kalifikasyonu.",
+        title: "Kaynak Yetkinliği",
+        desc: "DVS belgeli kaynak uzmanı (Schweißfachmann) ekibi. WPS, PQR, kaynakçı sertifikası ve prosedür kalifikasyonu.",
       },
       {
         key: "audit",
-        title: "Prüfung & Abnahme",
-        desc: "Belgeleme audit hazırlığı, FAT (Factory Acceptance Test) süreç desteği, ISO 5817 kalite değerlendirmesi.",
+        title: "Muayene & Kabul",
+        desc: "Belge denetimine hazırlık, fabrika kabul testi (FAT) desteği ve ISO 5817'ye göre kaynak kalite değerlendirmesi.",
       },
       {
         key: "connection",
-        title: "Verbindung schaffen",
-        desc: "Alman müşteriyle güvenli iletişim, dil + kültür köprüsü, fuar ve toplantı eşliği.",
+        title: "Köprü Kurmak",
+        desc: "Alman müşteriyle güven veren iletişim, dil ve kültür köprüsü, fuar ve toplantılarda yanınızda olmak.",
       },
     ],
   },
   servicesIntro: {
-    eyebrow: "Hizmetlerimiz",
-    title: "Tek elden tüm süreç",
+    eyebrow: "Ne yapıyoruz",
+    title: "Baştan sona tek elden",
     subtitle:
-      "Türk üreticilerin Almanya pazarında karşılaştığı üç temel engele odaklanıyoruz. Tek bir ekiple, başvurudan teslimata kadar.",
+      "Türk imalatçıların Almanya pazarında en çok takıldığı üç noktaya odaklanıyoruz. İlk teklif aşamasından sevkiyata kadar tek bir ekip.",
   },
   services: {
     certification: {
       title: "Belge Yol Haritası",
       summary:
-        "EN 1090, ISO 3834, WPS, kaynakçı sertifikası — karmaşık belge sistemini sizin için haritalandırırız.",
+        "EN 1090, ISO 3834, WPS, kaynakçı sertifikası... Bu belge karmaşasında yolunuzu biz çiziyoruz.",
       description:
-        "Hangi belge, hangi sıra, hangi kuruluşa başvurmalısınız — net bir yol planı. Bağımsız ve tarafsızız: belge basmıyoruz, sadece doğru yolu gösteriyoruz.",
+        "Hangi belgeyi, hangi sırayla, nereden alacaksınız? Önünüze net bir yol planı koyuyoruz. Biz belge satmıyoruz, kuruluşlarla çıkar ilişkimiz yok; sadece doğru yolu gösteriyoruz.",
       forWhom: {
         title: "Bu hizmet kimler için?",
         items: [
-          "Almanya'ya ilk kez satış yapacak metal/kaynak atölyeleri",
-          "Mevcut belge sistemi reklamasyona neden olan üreticiler",
-          "Belge alma sürecinde danışman değiştirip kararsız kalan firmalar",
-          "Maliyetli ve gereksiz belge masrafından kaçınmak isteyen patronlar",
+          "Almanya'ya ilk kez iş yapacak metal ve kaynak atölyeleri",
+          "Eldeki belgesi yüzünden reklamasyon yiyen üreticiler",
+          "Danışman değiştire değiştire bir türlü yol alamayan firmalar",
+          "Gereksiz belge masrafına girmek istemeyen patronlar",
         ],
       },
       process: {
@@ -92,7 +92,7 @@ export const tr = {
           },
           {
             title: "Yol haritası",
-            desc: "Önceliklendirilmiş, sıralı, bütçeli adım listesi. Belgeleme kuruluşu önerileri.",
+            desc: "Sıraya konmuş, bütçesi belli, adım adım bir plan. Hangi kuruluşa gideceğinizi de söylüyoruz.",
           },
           {
             title: "Süreç takibi",
@@ -100,7 +100,7 @@ export const tr = {
           },
           {
             title: "Belge sonrası bakım",
-            desc: "Yenileme tarihleri, iç audit hazırlığı, sürdürülebilirlik desteği.",
+            desc: "Yenileme tarihleri, iç denetim hazırlığı ve belgenin ayakta kalması için destek.",
           },
         ],
       },
@@ -109,19 +109,19 @@ export const tr = {
         items: [
           {
             q: "Sizinle çalışınca belgeyi siz mi veriyorsunuz?",
-            a: "Hayır. Belgelerinizi TÜRKAK akreditasyonlu Türk veya Alman belgeleme kuruluşlarından alırsınız. Biz hangisinin sizin için en uygun olduğunu, başvuru sürecini ve hazırlıklarını yönetiriz.",
+            a: "Hayır. Belgeyi TÜRKAK ya da DAkkS akreditasyonlu bir kuruluştan siz alıyorsunuz. Biz hangisinin size uygun olduğunu seçiyor, başvuruyu ve hazırlığı yönetiyoruz.",
           },
           {
             q: "EN 1090 bizim için gerekli mi?",
-            a: "Eğer ürününüz Almanya'da bir binaya, çelik konstrüksiyona veya yük taşıyan yapıya entegre ediliyorsa — evet, zorunludur. Sadece parça imalatı yapıyorsanız belki ISO 3834 yeterli. Ön görüşmede netleştiririz.",
+            a: "Ürününüz Almanya'da bir binaya, çelik yapıya ya da yük taşıyan bir konstrüksiyona montajlanıyorsa, evet, yasal olarak zorunlu. Sadece talaşlı parça üretiyorsanız çoğu zaman ISO 3834 yetiyor. Bunu ilk görüşmede netleştiriyoruz.",
           },
           {
             q: "Sürecin tamamı ne kadar sürer?",
-            a: "Atölye hazırlık seviyenize bağlı: 3 ay ile 12 ay arası. İlk değerlendirmeden sonra net tahmin veriyoruz.",
+            a: "Atölyenizin hazır olma durumuna göre 3 ila 12 ay. İlk değerlendirmeden sonra size net bir süre söylüyoruz.",
           },
           {
             q: "Maliyet aralığı nedir?",
-            a: "Belgelerin kendisi (belgeleme kuruluşu ücretleri) işletme büyüklüğüne göre değişir. Bizim danışmanlık ücretimiz proje bazlı, ilk görüşmeden sonra net teklif sunarız.",
+            a: "Belgelerin kendi ücreti (kuruluşa ödenen) firma büyüklüğüne göre değişir. Bizim danışmanlık ücretimiz işe göre belirlenir; ilk görüşmeden sonra net bir teklif veriyoruz.",
           },
         ],
       },
@@ -129,16 +129,16 @@ export const tr = {
     drawings: {
       title: "Teknik Resim Yorumlama",
       summary:
-        "Alman çizimini eline aldın. Kaynak sembolü ne anlama geliyor? B kalite, D kalite ne demek?",
+        "Alman müşteriden çizim geldi. Üstündeki kaynak sembolü ne diyor? B kalite, D kalite ne anlama geliyor?",
       description:
-        "GD&T toleransları, kaynak dikiş kaliteleri (ISO 5817), kaynak sembolleri (DIN EN 22553), form ve konum toleransları (ISO 1101) — birlikte okuyoruz, hata yapmadan üretiyorsunuz.",
+        "Kaynak dikiş kaliteleri (ISO 5817), kaynak sembolleri (DIN EN ISO 22553), form ve konum toleransları (ISO 1101)... Çizimi birlikte okuyoruz, siz de hatasız üretiyorsunuz.",
       forWhom: {
         title: "Bu hizmet kimler için?",
         items: [
-          "İlk Alman teknik resmiyle karşılaşan üretim ve kalite müdürleri",
-          "Reklamasyon almış, sebebini çizim yorumlamasında arayan firmalar",
-          "Yeni kalite ve üretim kadrosunu hızla yetkinleştirmek isteyen üreticiler",
-          "Teklif aşamasında çizimi doğru fiyatlandırmakta zorlanan firmalar",
+          "İlk kez bir Alman teknik resmiyle uğraşan üretim ve kalite sorumluları",
+          "Reklamasyon yiyip sebebini çizimi yanlış okumakta arayan firmalar",
+          "Kalite ve üretim ekibini hızla bu işe alıştırmak isteyen üreticiler",
+          "Teklif verirken çizimi doğru fiyatlamakta zorlanan firmalar",
         ],
       },
       process: {
@@ -146,23 +146,23 @@ export const tr = {
         steps: [
           {
             title: "Çizim teslimi",
-            desc: "Bize PDF veya DWG/STEP gönderirsiniz. NDA ile koruma altında.",
+            desc: "Bize PDF, DWG ya da STEP dosyasını gönderiyorsunuz. Gizlilik sözleşmesi (NDA) ile koruma altında.",
           },
           {
             title: "Hızlı tarama (24 saat)",
-            desc: "Kritik noktalar, belirsizlikler, risk alanları işaretlenir.",
+            desc: "Kritik noktaları, kapalı kalan yerleri ve riskli bölgeleri işaretliyoruz.",
           },
           {
             title: "Detaylı yorumlama",
-            desc: "Sembol-sembol açıklama, tolerans yorumu, kaynak kalite analizi.",
+            desc: "Her sembolü tek tek açıklıyoruz; toleransları ve istenen kaynak kalitesini yorumluyoruz.",
           },
           {
             title: "Üretim talimatı",
-            desc: "Türkçe, atölye için anlaşılır WPS önerisi ve kontrol listesi.",
+            desc: "Atölyenin anlayacağı, Türkçe bir WPS önerisi ve kontrol listesi.",
           },
           {
             title: "Eğitim oturumu (opsiyonel)",
-            desc: "Üretim ve kalite ekibinize 2 saatlik canlı yorumlama eğitimi.",
+            desc: "Üretim ve kalite ekibinize 2 saatlik canlı çizim okuma eğitimi.",
           },
         ],
       },
@@ -171,19 +171,19 @@ export const tr = {
         items: [
           {
             q: "Bir çizim için fiyatınız nedir?",
-            a: "Çizim karmaşıklığına göre 150€ ile 800€ arasında. Basit parça için sabit fiyat, karmaşık konstrüksiyon için saatlik.",
+            a: "Çizimin karmaşıklığına göre 150€ ile 800€ arası. Basit parçada sabit fiyat, karmaşık konstrüksiyonda saatlik çalışıyoruz.",
           },
           {
             q: "Çizim DWG formatında değil, sadece PDF var. Sorun olur mu?",
-            a: "PDF de olur. DWG/STEP varsa daha hızlı ve detaylı çalışırız ama zorunlu değil.",
+            a: "PDF de yeter. DWG ya da STEP varsa daha hızlı ve detaylı çalışırız ama şart değil.",
           },
           {
             q: "Toleranslar Türkiye'deki ölçüm aletlerimizle ölçülebilir mi?",
-            a: "Bu sorunun cevabını çizimi gördüğümüzde net veriyoruz. Bazı GD&T toleransları için 3D koordinat ölçüm cihazı (CMM) gerekebilir.",
+            a: "Bunu çizimi görünce net söylüyoruz. Bazı sıkı toleranslar için 3D koordinat ölçüm cihazı (CMM) gerekebilir.",
           },
           {
             q: "Gizli bilgi koruma garantiniz var mı?",
-            a: "Evet. İlk dosya teslimi öncesi NDA imzalıyoruz. Çizimler güvenli sunucuda saklanır, proje sonu silinir.",
+            a: "Evet. İlk dosyayı göndermeden önce gizlilik sözleşmesi imzalıyoruz. Çizimler güvenli sunucuda durur, iş bitince silinir.",
           },
         ],
       },
@@ -191,16 +191,16 @@ export const tr = {
     representation: {
       title: "Almanya'da Temsil",
       summary:
-        "Müşteriyle e-mail, telefon, ziyaret. Reklamasyon yönetimi, 8D raporu, fuar standı desteği.",
+        "Müşteriyle yazışma, telefon ve ziyaret. Reklamasyon yönetimi, 8D raporu, fuar standında destek.",
       description:
-        "Almanya tarafında sizin temsilciniz olarak görev yaparız. Dil duvarı, zaman dilimi, kültür farkı sizin sorununuz olmaktan çıkar.",
+        "Almanya tarafında sizin temsilciniz gibi çalışıyoruz. Dil engeli, saat farkı ve kültür farkı artık sizin derdiniz olmaktan çıkıyor.",
       forWhom: {
         title: "Bu hizmet kimler için?",
         items: [
-          "Almanya'da müşteri görüşmesi yapamayan veya yetersiz yapan firmalar",
-          "Reklamasyon geldikten sonra dağılan iletişim süreçlerinde sıkışan üreticiler",
+          "Almanya'daki müşteriyle düzgün görüşme yürütemeyen firmalar",
+          "Reklamasyon gelince iletişimi dağılan, ne yapacağını şaşıran üreticiler",
           "Hannover Messe, Blechexpo, EuroBLECH gibi fuarlara katılım planlayan firmalar",
-          "Almanya'da yeni müşteri bulmak isteyen ama nasıl başlayacağını bilmeyen ihracat müdürleri",
+          "Almanya'da yeni müşteri arayan ama nereden başlayacağını bilemeyen ihracat sorumluları",
         ],
       },
       process: {
@@ -208,7 +208,7 @@ export const tr = {
         steps: [
           {
             title: "Kapsam belirleme",
-            desc: "Hangi müşteriler, hangi konular, ne sıklıkla temsil — net brief.",
+            desc: "Hangi müşteriler, hangi konular, ne sıklıkta... Baştan net konuşuyoruz.",
           },
           {
             title: "Müşteri iletişimi",
@@ -216,15 +216,15 @@ export const tr = {
           },
           {
             title: "Yerinde ziyaret",
-            desc: "Gerekli durumlarda müşteri tesisine fiziksel ziyaret (Almanya içi).",
+            desc: "Gerektiğinde müşterinin tesisine bizzat gidiyoruz (Almanya içinde).",
           },
           {
             title: "Reklamasyon & 8D",
-            desc: "Sorun çıktığında müşteriye ilk cevap, 8D raporu hazırlığı, takip.",
+            desc: "Sorun çıktığında müşteriye ilk cevabı veriyoruz, 8D raporunu hazırlıyor, peşini bırakmıyoruz.",
           },
           {
             title: "Raporlama",
-            desc: "Haftalık veya aylık özet — tüm görüşmeler, kararlar, açık konular.",
+            desc: "Haftalık ya da aylık özet: tüm görüşmeler, alınan kararlar ve açık kalan konular.",
           },
         ],
       },
@@ -233,19 +233,19 @@ export const tr = {
         items: [
           {
             q: "Sizinle çalışmak Almanya'da resmi temsilci atamak mı oluyor?",
-            a: "Hayır. Biz hukuki temsilci (Handelsvertreter) değil, danışman temsilciyiz. Hukuki temsil için ayrı sözleşme gerekir.",
+            a: "Hayır. Biz resmi/hukuki temsilci (Handelsvertreter) değil, danışman olarak temsil ediyoruz. Resmi temsilcilik ayrı bir sözleşme gerektirir.",
           },
           {
             q: "Hangi sektörlerde tecrübeniz var?",
-            a: "Çelik konstrüksiyon, makine imalatı, otomotiv yan sanayi, sac işleme. Diğer sektörlerde ön görüşmede uygunluğu birlikte değerlendiririz.",
+            a: "Çelik konstrüksiyon, makine imalatı, otomotiv yan sanayi ve sac işleme. Başka bir sektördeyseniz, uyumu ilk görüşmede birlikte değerlendiriyoruz.",
           },
           {
             q: "Müşterimizi kaybetme riskim var mı?",
-            a: "Hayır. Tüm iletişim sizin adınıza ve sizin domain'inizden yürütülür. Müşteri sizinle iş yaptığını bilir.",
+            a: "Hayır. Bütün yazışma sizin adınıza ve sizin e-mail adresinizden gidiyor. Müşteri sizinle iş yaptığını bilir.",
           },
           {
             q: "Fuar standında neler yapıyorsunuz?",
-            a: "Stant öncesi randevu organizasyonu, fuar günü stantta Almanca müşteri karşılama, sonrası takip e-mailleri. Tek paket veya parça parça.",
+            a: "Fuardan önce randevu ayarlama, fuar günü stantta Almanca müşteri karşılama, fuar sonrası takip yazışmaları. İsterseniz tek paket, isterseniz parça parça.",
           },
         ],
       },
@@ -253,19 +253,19 @@ export const tr = {
   },
   whyUs: {
     eyebrow: "Neden biz?",
-    title: "Bağımsız. Sahadan. Sonuç odaklı.",
+    title: "Bağımsızız, sahadan geliyoruz, sonuca bakıyoruz.",
     items: [
       {
-        title: "Almanya'da aktif çalışıyoruz",
-        desc: "Alman müşterinin nasıl düşündüğünü kitaplardan değil, sahada öğrendik. Almanya'da tam zamanlı endüstriyel pozisyondayız.",
+        title: "Almanya'nın içindeyiz",
+        desc: "Alman müşterinin kafasındakini kitaptan değil, sahada çalışarak öğrendik. Hâlâ Almanya'da tam zamanlı sanayide görevdeyiz.",
       },
       {
-        title: "Belge basmıyoruz, yol gösteriyoruz",
-        desc: "Bağımsız ve tarafsızız. Belgeleme kuruluşlarıyla çıkar bağımız yok. Sadece sizin başarınız üzerinden kazanıyoruz.",
+        title: "Belge satmıyoruz, yol gösteriyoruz",
+        desc: "Bağımsızız; belge kuruluşlarıyla hiçbir çıkar ilişkimiz yok. Biz sadece siz kazanınca kazanıyoruz.",
       },
       {
-        title: "Tek temas noktası",
-        desc: "Başvurudan sevkiyata kadar tüm süreç bizimle. Her aşamada farklı bir danışmanla muhatap olmazsınız.",
+        title: "Tek muhatap",
+        desc: "İlk teklifden sevkiyata kadar hep aynı ekiple çalışıyorsunuz. Her aşamada başka birine baştan anlatmak yok.",
       },
     ],
   },
@@ -380,15 +380,15 @@ export const tr = {
     title:
       "Almanya'ya kaynaklı imalat satmadan önce sormanız gereken 10 kritik soru",
     description:
-      "Almanya'daki uzun yıllık saha ve kalite deneyimimizle hazırladığımız PDF rehberi e-mail adresinize gönderelim. Spam yok, sadece bu PDF + ayda bir kez sektör güncellemesi.",
+      "Almanya'da yıllarca sahada ve kalitede çalışarak hazırladığımız rehberi e-posta adresinize gönderelim. Spam yok; sadece bu PDF ve ayda bir sektör güncellemesi.",
     pdfFile: "/downloads/DINConnect_10_Kritik_Soru_TR.pdf",
     downloadCta: "PDF'i indir",
     emailPlaceholder: "ornek@firmaniz.com.tr",
     submit: "PDF'i Gönder",
     consent:
-      "Formu göndererek KVKK ve DSGVO kapsamında verilerinizin işlenmesini kabul edersiniz.",
+      "Formu göndererek, KVKK ve DSGVO kapsamında verilerinizin işlenmesini kabul etmiş olursunuz.",
     success:
-      "Teşekkürler! PDF birkaç dakika içinde e-mail adresinize ulaşır. Spam klasörünü kontrol etmeyi unutmayın.",
+      "Teşekkürler! PDF birkaç dakika içinde e-postanıza düşer. Gelmezse spam klasörüne de bir göz atın.",
   },
   about: {
     title: "Hakkımızda",
@@ -398,8 +398,8 @@ export const tr = {
       title: "Hikayemiz",
       paragraphs: [
         "DINConnect, Almanya'da yıllardır endüstriyel pozisyonlarda çalışan üç Türk uzmanın gözlemlerinden doğdu. Bir tarafta uzun yıllık üretim sahası ve CAD deneyimi, diğer tarafta DVS sertifikalı kaynak üretimi — aynı sahnenin iki yanını da gördük: Türkiye'de iyi üreten ama Almanya'ya satarken iletişim, belge, tolerans sorunlarıyla boğuşan firmalar — ve Almanya'da Türk tedarikçiden memnun ama \"keşke iletişim daha kolay olsa\" diyen müşteriler.",
-        "İki tarafın da kaybettiği bir denklem. Türk üretici reklamasyon yiyor, Alman müşteri tedarikçi değiştiriyor. Sorun teknik kapasitede değil — bilgi, belge, dil köprüsünde.",
-        "Bu köprüyü kurmak için bir araya geldik. Belge basmıyoruz, üretim yapmıyoruz. Sadece tarafsız bir köprüyüz — bilgi, dil, kültür ve kalite süreçlerinde.",
+        "Sonuçta iki taraf da kaybediyor. Türk üretici reklamasyon yiyor, Alman müşteri tedarikçi değiştiriyor. Oysa sorun teknik kapasitede değil; bilgi, belge ve dil köprüsünde.",
+        "İşte o köprüyü kurmak için bir araya geldik. Ne belge satıyoruz ne de üretim yapıyoruz. Sadece bilgi, dil, kültür ve kalite tarafında tarafsız bir köprüyüz.",
       ],
     },
     values: {
@@ -407,15 +407,15 @@ export const tr = {
       items: [
         {
           title: "Bağımsızlık",
-          desc: "Belgeleme kuruluşu, üretici veya komisyon ortaklığımız yok. Sadece sizin için çalışıyoruz.",
+          desc: "Hiçbir belge kuruluşu ya da üreticiyle komisyon anlaşmamız yok. Sadece sizin için çalışıyoruz.",
         },
         {
           title: "Şeffaflık",
-          desc: "Her e-mail kopyası size gelir, her toplantı raporlanır, her fatura kalemi açıklanır.",
+          desc: "Gönderdiğimiz her e-mailin kopyası sizde olur, her toplantıyı raporlarız, faturadaki her kalemi açıklarız.",
         },
         {
           title: "Sahadan bilgi",
-          desc: "Tüm önerimiz teoriden değil, Almanya'da bizzat yaşanmış deneyimden geliyor.",
+          desc: "Söylediğimiz her şey teoriden değil, Almanya'da bizzat yaşadığımız işlerden geliyor.",
         },
       ],
     },
@@ -436,10 +436,10 @@ export const tr = {
   resources: {
     title: "Kaynaklar",
     subtitle:
-      "Almanya'ya satmak isteyen Türk metal üreticileri için makaleler, rehberler ve faydalı linkler.",
+      "Almanya'ya iş yapmak isteyen Türk metal üreticileri için yazılar, rehberler ve işe yarar bağlantılar.",
     blogTitle: "Blog yazıları",
     comingSoon: "Yakında",
-    comingSoonDesc: "İlk yazılarımız üzerinde çalışıyoruz. PDF rehberi indirin, ilki yayınlandığında haberiniz olsun.",
+    comingSoonDesc: "İlk yazılarımızı hazırlıyoruz. PDF rehberi indirin, ilk yazı çıktığında size haber verelim.",
     linksTitle: "Faydalı linkler",
     links: [
       {
@@ -472,7 +472,7 @@ export const tr = {
   contact: {
     title: "İletişim",
     subtitle:
-      "Ücretsiz ön görüşme talebinizi bırakın, 48 saat içinde dönüş yapalım.",
+      "Ücretsiz ön görüşme için bilgilerinizi bırakın, 48 saat içinde size dönelim.",
     form: {
       name: "Adınız",
       company: "Firma",
@@ -482,9 +482,9 @@ export const tr = {
       submit: "Gönder",
       sending: "Gönderiliyor…",
       success:
-        "Mesajınız bize ulaştı. 48 saat içinde dönüş yapacağız. Acil durumda WhatsApp'tan yazabilirsiniz.",
+        "Mesajınız elimize ulaştı. En geç 48 saat içinde size döneriz. Acil bir durumsa WhatsApp'tan da yazabilirsiniz.",
       error:
-        "Bir sorun oluştu. Lütfen tekrar deneyin veya WhatsApp'tan iletişime geçin.",
+        "Bir şeyler ters gitti. Lütfen tekrar deneyin ya da WhatsApp'tan yazın.",
     },
     direct: {
       title: "Doğrudan iletişim",
@@ -495,19 +495,19 @@ export const tr = {
     },
     serviceArea: {
       title: "Türkiye hizmet bölgelerimiz",
-      desc: "Aşağıdaki şehirlerde sahada görüşme ve yerinde değerlendirme yapıyoruz:",
+      desc: "Şu illerde bizzat yerinde görüşüp değerlendirme yapıyoruz:",
     },
   },
   cta: {
     bottom: {
       title: "Bir adım atın",
       subtitle:
-        "Ücretsiz ön görüşmede mevcut durumunuzu birlikte değerlendirelim. Almanya pazarı için ne kadar hazırsınız, ne eksik — net konuşalım.",
+        "Ücretsiz ön görüşmede bulunduğunuz noktayı birlikte görelim. Almanya pazarına ne kadar hazırsınız, neyiniz eksik — açık açık konuşalım.",
       button: "Ücretsiz Ön Görüşme",
     },
   },
   footer: {
-    tagline: "Türkiye ve Almanya — DIN standartlarına göre.",
+    tagline: "Türkiye ve Almanya arasında, Alman normlarıyla.",
     columns: {
       services: "Hizmetler",
       company: "Şirket",
@@ -589,11 +589,11 @@ export const tr = {
       "10 kritik soru + 10 doğrulanmış cevap",
       "Anında PDF, e-posta listesinden istediğinde çık",
     ],
-    leadFormSub: "E-posta adresinizi bırakın, PDF'i hemen gönderelim.",
+    leadFormSub: "E-posta adresinizi bırakın, PDF'i hemen yollayalım.",
     serviceAreaTitle:
-      "Hizmet bölgelerimiz Türkiye'nin sanayi merkezlerini kapsar",
+      "Türkiye'nin sanayi merkezlerinin hepsine ulaşıyoruz",
     serviceAreaDesc:
-      "Vaihingen ofisimizden uçakla 4 saatlik mesafede tüm büyük metal ve makine imalatı OSB'lerine ulaşıyoruz. Yerinde değerlendirme, fabrika ziyareti ve audit hazırlığı için sahaya geliyoruz.",
+      "Vaihingen'deki ofisimizden, uçakla 4 saat mesafedeki tüm büyük sanayi ve makine OSB'lerine ulaşıyoruz. Yerinde değerlendirme, fabrika ziyareti ve denetim hazırlığı için sahaya geliyoruz.",
     contactFormTitle: "Ön görüşme talebinizi bırakın",
     pdfMeta: "PDF · ~ 2 MB · Türkçe",
     blog: "Blog",

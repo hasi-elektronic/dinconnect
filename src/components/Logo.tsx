@@ -31,7 +31,7 @@ export function Logo({ variant = "dark", className = "", size = "compact" }: Log
       <img
         src="/dinconnect-emblem.png"
         alt="DINConnect"
-        className={`h-9 md:h-11 w-auto object-contain ${variant === "light" ? "rounded-md bg-white/95 px-1.5 py-1" : ""}`}
+        className="h-9 md:h-11 w-auto object-contain"
       />
       <span
         className="font-display font-extrabold text-xl md:text-2xl tracking-tight leading-none"

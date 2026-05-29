@@ -20,20 +20,27 @@ export function Home() {
           <svg className="w-full h-full" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1200 600">
             <defs>
               <pattern id="bridge-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-                <path d="M0 40 L80 40 M40 0 L40 80 M0 0 L80 80 M80 0 L0 80" stroke="#F4A024" strokeWidth="0.8" />
+                <path d="M0 40 L80 40 M40 0 L40 80 M0 0 L80 80 M80 0 L0 80" stroke="#D4A24C" strokeWidth="0.8" />
               </pattern>
             </defs>
             <rect width="1200" height="600" fill="url(#bridge-grid)" />
           </svg>
         </div>
 
-        {/* Amber accent line bottom */}
+        {/* Gold accent line bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold to-transparent opacity-50" />
 
-        <Container className="relative py-20 md:py-32 lg:py-40">
+        <Container className="relative py-20 md:py-28 lg:py-32">
           <div className="max-w-4xl">
+            {/* Logo amblem — büyük, hero üstünde */}
+            <img
+              src="/dinconnect-emblem.png"
+              alt="DINConnect"
+              className="h-20 md:h-28 w-auto object-contain mb-8 drop-shadow-2xl"
+            />
+
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-3 mb-7 px-4 py-2 bg-gold/10 border border-gold/30 rounded-full">
+            <div className="inline-flex items-center gap-3 mb-6 px-4 py-2 bg-gold/10 border border-gold/30 rounded-full">
               <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
               <span className="text-gold-300 font-semibold text-xs uppercase tracking-widest">
                 {t.hero.eyebrow}

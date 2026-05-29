@@ -16,52 +16,52 @@ export const tr = {
     eyebrow: "Türkiye → Almanya · Alman normlarıyla",
     slogan: "Verbinden. Prüfen. Zertifizieren.",
     title:
-      "Almanya'ya iş yapan Türk imalatçıların Almanya'daki sağ kolu.",
+      "Almanya'ya iş yapan Türk imalatçının Almanya'daki adamı.",
     subtitle:
-      "Almanya'da fiilen sanayide çalışan bir Türk-Alman ekibiz. Belge sürecinden teknik resmin okunmasına, kalite kontrolden Alman müşteriyle yazışmaya kadar işin her adımında yanınızdayız.",
-    ctaPrimary: "Ücretsiz ön görüşme",
-    ctaSecondary: "Ne yapıyoruz?",
+      "Biz de sizden biriyiz; Almanya'da yıllardır sanayinin içinde çalışan bir Türk-Alman ekibiz. Alman müşterinin ne istediğini, neye takıldığını buradan görüyoruz. Belgeden teknik resme, kalite kontrolden müşteriyle yazışmaya kadar işin her adımında arkanızdayız.",
+    ctaPrimary: "Hadi tanışalım — ücretsiz",
+    ctaSecondary: "Tam olarak ne yapıyoruz?",
   },
   trust: {
-    title: "Bağımsızız. Sahadan geliyoruz. Sonuca bakıyoruz.",
+    title: "Lafı dolandırmıyoruz: bağımsızız, sahadan geliyoruz, işi sonuca bağlıyoruz.",
     items: [
-      { value: "12+", label: "Yıldır Alman sanayisinin içindeyiz" },
+      { value: "12+", label: "Yıldır Almanya'da sanayinin içindeyiz" },
       { value: "0", label: "Belge kuruluşlarıyla çıkar ilişkimiz" },
-      { value: "3", label: "Türk-Alman uzman" },
-      { value: "DE+TR", label: "Sahada iki dil, iki kültür" },
+      { value: "3", label: "Türk-Alman uzman, hepsi sahada" },
+      { value: "DE+TR", label: "İki dil, iki kültür, tek ekip" },
     ],
   },
   pillars: {
-    eyebrow: "Dört temel alan",
-    title: "Almanya'ya uygun üretimin dört direği",
+    eyebrow: "İşin dört ayağı",
+    title: "Almanya'ya uygun üretimin dört ayağı var",
     items: [
       {
         key: "norms",
         title: "Alman Normları",
-        desc: "DIN, EN ve ISO standartlarına tam hakimiyet. Hangi iş için hangi standart, hangi sınıf, hangi sürüm — kafanızda soru kalmaz.",
+        desc: "DIN, EN, ISO... Bu standartlar bizim ana dilimiz. Hangi iş için hangi belge, hangi sınıf, hangi sürüm gerekiyor — kafanızda soru bırakmıyoruz.",
       },
       {
         key: "welding",
-        title: "Kaynak Yetkinliği",
-        desc: "DVS belgeli kaynak uzmanı (Schweißfachmann) ekibi. WPS, PQR, kaynakçı sertifikası ve prosedür kalifikasyonu.",
+        title: "Kaynak Tarafı",
+        desc: "DVS belgeli kaynak uzmanlarımız (Schweißfachmann) var. WPS, PQR, kaynakçı sertifikası, prosedür kalifikasyonu — hepsi bizim işimiz.",
       },
       {
         key: "audit",
         title: "Muayene & Kabul",
-        desc: "Belge denetimine hazırlık, fabrika kabul testi (FAT) desteği ve ISO 5817'ye göre kaynak kalite değerlendirmesi.",
+        desc: "Belge denetimine hazırlık, fabrika kabul testi (FAT) ve ISO 5817'ye göre kaynak kalitesi değerlendirmesi. Denetime hazırsınız, sürpriz yok.",
       },
       {
         key: "connection",
-        title: "Köprü Kurmak",
-        desc: "Alman müşteriyle güven veren iletişim, dil ve kültür köprüsü, fuar ve toplantılarda yanınızda olmak.",
+        title: "Köprü Olmak",
+        desc: "Alman müşteriyle güveni kurmak, dil ve kültür arasını kapatmak, fuarda ve toplantıda yanınızda olmak. İşin görünmeyen ama en kritik tarafı.",
       },
     ],
   },
   servicesIntro: {
     eyebrow: "Ne yapıyoruz",
-    title: "Baştan sona tek elden",
+    title: "Üç işte, baştan sona yanınızdayız",
     subtitle:
-      "Türk imalatçıların Almanya pazarında en çok takıldığı üç noktaya odaklanıyoruz. İlk teklif aşamasından sevkiyata kadar tek bir ekip.",
+      "Almanya'ya satan Türk imalatçının en çok takıldığı üç yer var. Biz tam o üç noktaya çöküyoruz — ilk teklifi verirken de, mal kapıdan çıkarken de aynı ekiple muhatapsınız.",
   },
   services: {
     certification: {
@@ -191,7 +191,7 @@ export const tr = {
     representation: {
       title: "Almanya'da Temsil",
       summary:
-        "Müşteriyle yazışma, telefon ve ziyaret. Reklamasyon yönetimi, 8D raporu, fuar standında destek.",
+        "Müşteriyle yazışma, telefon, ziyaret... Almanya tarafındaki işleri biz takip ediyoruz. Reklamasyon mı geldi? 8D raporu, fuar standı, hepsi bizde.",
       description:
         "Almanya tarafında sizin temsilciniz gibi çalışıyoruz. Dil engeli, saat farkı ve kültür farkı artık sizin derdiniz olmaktan çıkıyor.",
       forWhom: {
@@ -253,19 +253,19 @@ export const tr = {
   },
   whyUs: {
     eyebrow: "Neden biz?",
-    title: "Bağımsızız, sahadan geliyoruz, sonuca bakıyoruz.",
+    title: "Çünkü biz de o tezgahın başında durduk",
     items: [
       {
-        title: "Almanya'nın içindeyiz",
-        desc: "Alman müşterinin kafasındakini kitaptan değil, sahada çalışarak öğrendik. Hâlâ Almanya'da tam zamanlı sanayide görevdeyiz.",
+        title: "Almanya'nın tam içindeyiz",
+        desc: "Alman müşterinin kafasındakini kitaptan okumadık, yıllarca sahada çalışarak öğrendik. Hâlâ Almanya'da, hâlâ sanayinin içindeyiz. Yani konuştuğumuz şeyi yaşıyoruz.",
       },
       {
-        title: "Belge satmıyoruz, yol gösteriyoruz",
-        desc: "Bağımsızız; belge kuruluşlarıyla hiçbir çıkar ilişkimiz yok. Biz sadece siz kazanınca kazanıyoruz.",
+        title: "Belge satmıyoruz, yolu gösteriyoruz",
+        desc: "Hiçbir belge kuruluşuyla çıkar ilişkimiz yok, kimseden komisyon almıyoruz. Bizim kazancımız tek bir şeye bağlı: siz kazanacaksınız.",
       },
       {
-        title: "Tek muhatap",
-        desc: "İlk teklifden sevkiyata kadar hep aynı ekiple çalışıyorsunuz. Her aşamada başka birine baştan anlatmak yok.",
+        title: "Hep aynı kişiler",
+        desc: "İlk telefondan son sevkiyata kadar hep aynı ekiple konuşuyorsunuz. Her seferinde meseleyi baştan anlatmak, yeni birine alışmak yok.",
       },
     ],
   },
@@ -376,15 +376,15 @@ export const tr = {
     ],
   },
   leadMagnet: {
-    eyebrow: "Ücretsiz Rehber",
+    eyebrow: "Ücretsiz rehber",
     title:
-      "Almanya'ya kaynaklı imalat satmadan önce sormanız gereken 10 kritik soru",
+      "Almanya'ya mal göndermeden önce kendinize sorun: bu 10 soruya net cevabınız var mı?",
     description:
-      "Almanya'da yıllarca sahada ve kalitede çalışarak hazırladığımız rehberi e-posta adresinize gönderelim. Spam yok; sadece bu PDF ve ayda bir sektör güncellemesi.",
+      "Almanya'da yıllarca sahada ve kalitede çalışırken gördüğümüz en pahalı hataları 10 soruya indirdik. Para ve itibar kaybettirenler hep bunlar. E-posta adresinizi bırakın, rehberi hemen gönderelim — spam yok, sadece bu PDF ve ayda bir kısa sektör notu.",
     pdfFile: "/downloads/DINConnect_10_Kritik_Soru_TR.pdf",
     downloadCta: "PDF'i indir",
     emailPlaceholder: "ornek@firmaniz.com.tr",
-    submit: "PDF'i Gönder",
+    submit: "Rehberi gönder",
     consent:
       "Formu göndererek, KVKK ve DSGVO kapsamında verilerinizin işlenmesini kabul etmiş olursunuz.",
     success:
@@ -500,10 +500,10 @@ export const tr = {
   },
   cta: {
     bottom: {
-      title: "Bir adım atın",
+      title: "Bir kahve içimi konuşalım",
       subtitle:
-        "Ücretsiz ön görüşmede bulunduğunuz noktayı birlikte görelim. Almanya pazarına ne kadar hazırsınız, neyiniz eksik — açık açık konuşalım.",
-      button: "Ücretsiz Ön Görüşme",
+        "Ücretsiz ön görüşmede bulunduğunuz noktayı birlikte görelim. Almanya'ya ne kadar hazırsınız, neyiniz eksik, nereden başlamalı — hiçbir şey satmadan, açık açık konuşalım. Karar sizin.",
+      button: "Ücretsiz ön görüşme",
     },
   },
   footer: {
@@ -585,15 +585,15 @@ export const tr = {
     turkeyWide: "Türkiye geneli",
     downloadNow: "Hemen indir",
     leadBullets: [
-      "Almanya'daki uzun yıllık saha ve kalite tecrübemizin özeti",
-      "10 kritik soru + 10 doğrulanmış cevap",
-      "Anında PDF, e-posta listesinden istediğinde çık",
+      "Almanya'da yıllarca yaşadığımız tecrübenin özeti",
+      "10 kritik soru, hepsi sahadan, hepsi gerçek",
+      "Anında PDF; istemediğiniz an listeden çıkarsınız",
     ],
     leadFormSub: "E-posta adresinizi bırakın, PDF'i hemen yollayalım.",
     serviceAreaTitle:
-      "Türkiye'nin sanayi merkezlerinin hepsine ulaşıyoruz",
+      "Türkiye'nin neresindeyseniz, oradayız",
     serviceAreaDesc:
-      "Vaihingen'deki ofisimizden, uçakla 4 saat mesafedeki tüm büyük sanayi ve makine OSB'lerine ulaşıyoruz. Yerinde değerlendirme, fabrika ziyareti ve denetim hazırlığı için sahaya geliyoruz.",
+      "Vaihingen'deki ofisimizden Türkiye'nin tüm büyük sanayi ve makine OSB'lerine kısa sürede ulaşıyoruz. Yerinde değerlendirme, fabrika ziyareti ya da denetim hazırlığı için bizzat sahaya geliyoruz — ekrandan değil, yanınızda.",
     contactFormTitle: "Ön görüşme talebinizi bırakın",
     pdfMeta: "PDF · ~ 2 MB · Türkçe",
     blog: "Blog",

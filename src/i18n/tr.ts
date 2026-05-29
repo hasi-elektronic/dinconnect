@@ -16,14 +16,14 @@ export const tr = {
     eyebrow: "Türkiye → Almanya · Alman normlarıyla",
     slogan: "Verbinden. Prüfen. Zertifizieren.",
     title:
-      "Almanya'ya iş yapan Türk imalatçının Almanya'daki adamı.",
+      "Almanya'ya iş yapan Türk imalatçının Almanya'daki güvenilir ortağı.",
     subtitle:
-      "Biz de sizden biriyiz; Almanya'da yıllardır sanayinin içinde çalışan bir Türk-Alman ekibiz. Alman müşterinin ne istediğini, neye takıldığını buradan görüyoruz. Belgeden teknik resme, kalite kontrolden müşteriyle yazışmaya kadar işin her adımında arkanızdayız.",
+      "Biz de sizin gibiyiz; Almanya'da yıllardır sanayinin içinde çalışan bir Türk-Alman ekibiz. Alman müşterinin ne istediğini, nerede zorlandığınızı buradan görüyoruz. Belgeden teknik resme, kalite kontrolden müşteri yazışmasına kadar her aşamada yanınızdayız.",
     ctaPrimary: "Hadi tanışalım — ücretsiz",
     ctaSecondary: "Tam olarak ne yapıyoruz?",
   },
   trust: {
-    title: "Lafı dolandırmıyoruz: bağımsızız, sahadan geliyoruz, işi sonuca bağlıyoruz.",
+    title: "Bağımsızız, sahanın içinden geliyoruz, işi sonuca bağlarız.",
     items: [
       { value: "12+", label: "Yıldır Almanya'da sanayinin içindeyiz" },
       { value: "0", label: "Belge kuruluşlarıyla çıkar ilişkimiz" },
@@ -38,7 +38,7 @@ export const tr = {
       {
         key: "norms",
         title: "Alman Normları",
-        desc: "DIN, EN, ISO... Bu standartlar bizim ana dilimiz. Hangi iş için hangi belge, hangi sınıf, hangi sürüm gerekiyor — kafanızda soru bırakmıyoruz.",
+        desc: "DIN, EN, ISO standartlarını çok iyi biliyoruz. Hangi iş için hangi belge, hangi sınıf, hangi sürüm gerekiyor — hepsini net olarak söylüyoruz.",
       },
       {
         key: "welding",
@@ -61,7 +61,7 @@ export const tr = {
     eyebrow: "Ne yapıyoruz",
     title: "Üç işte, baştan sona yanınızdayız",
     subtitle:
-      "Almanya'ya satan Türk imalatçının en çok takıldığı üç yer var. Biz tam o üç noktaya çöküyoruz — ilk teklifi verirken de, mal kapıdan çıkarken de aynı ekiple muhatapsınız.",
+      "Almanya'ya satan Türk imalatçının en çok zorlandığı üç konu var. Biz de işte tam bu üç konuda yanınızdayız — ilk teklifi hazırlarken de, mal sevk edilirken de hep aynı ekiple çalışırsınız.",
   },
   services: {
     certification: {
@@ -193,7 +193,7 @@ export const tr = {
       summary:
         "Müşteriyle yazışma, telefon, ziyaret... Almanya tarafındaki işleri biz takip ediyoruz. Reklamasyon mı geldi? 8D raporu, fuar standı, hepsi bizde.",
       description:
-        "Almanya tarafında sizin temsilciniz gibi çalışıyoruz. Dil engeli, saat farkı ve kültür farkı artık sizin derdiniz olmaktan çıkıyor.",
+        "Almanya tarafında sizin temsilciniz gibi çalışıyoruz. Dil engeli, saat farkı ve kültür farkı artık sizin sorununuz olmaktan çıkıyor.",
       forWhom: {
         title: "Bu hizmet kimler için?",
         items: [
@@ -253,11 +253,11 @@ export const tr = {
   },
   whyUs: {
     eyebrow: "Neden biz?",
-    title: "Çünkü biz de o tezgahın başında durduk",
+    title: "Çünkü biz de aynı işin içinden geliyoruz",
     items: [
       {
         title: "Almanya'nın tam içindeyiz",
-        desc: "Alman müşterinin kafasındakini kitaptan okumadık, yıllarca sahada çalışarak öğrendik. Hâlâ Almanya'da, hâlâ sanayinin içindeyiz. Yani konuştuğumuz şeyi yaşıyoruz.",
+        desc: "Alman müşterinin beklentilerini kitaplardan değil, yıllarca Almanya'da sahada çalışarak öğrendik. Hâlâ buradayız, hâlâ sanayinin içindeyiz. Yani anlattığımız her şeyi bizzat yaşıyoruz.",
       },
       {
         title: "Belge satmıyoruz, yolu gösteriyoruz",
@@ -500,9 +500,9 @@ export const tr = {
   },
   cta: {
     bottom: {
-      title: "Bir kahve içimi konuşalım",
+      title: "Önce bir konuşalım",
       subtitle:
-        "Ücretsiz ön görüşmede bulunduğunuz noktayı birlikte görelim. Almanya'ya ne kadar hazırsınız, neyiniz eksik, nereden başlamalı — hiçbir şey satmadan, açık açık konuşalım. Karar sizin.",
+        "Ücretsiz bir ön görüşme yapalım, durumunuzu birlikte değerlendirelim. Almanya'ya ne kadar hazırsınız, neyiniz eksik, nereden başlamanız gerekiyor — size hiçbir şey satmadan, açıkça anlatalım. Kararı siz verirsiniz.",
       button: "Ücretsiz ön görüşme",
     },
   },

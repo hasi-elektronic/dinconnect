@@ -384,6 +384,8 @@ export const en: Dict = {
       "10 critical questions to ask before you sell welded fabrication to Germany",
     description:
       "Prepared from years of field and quality experience in Germany. We'll send the PDF guide to your e-mail. No spam — just this PDF plus a monthly industry update.",
+    pdfFile: "/downloads/DINConnect_10_Critical_Questions_EN.pdf",
+    downloadCta: "Download the PDF",
     emailPlaceholder: "you@yourcompany.com",
     submit: "Send the PDF",
     consent:

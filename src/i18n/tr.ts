@@ -381,6 +381,8 @@ export const tr = {
       "Almanya'ya kaynaklı imalat satmadan önce sormanız gereken 10 kritik soru",
     description:
       "Almanya'daki uzun yıllık saha ve kalite deneyimimizle hazırladığımız PDF rehberi e-mail adresinize gönderelim. Spam yok, sadece bu PDF + ayda bir kez sektör güncellemesi.",
+    pdfFile: "/downloads/DINConnect_10_Kritik_Soru_TR.pdf",
+    downloadCta: "PDF'i indir",
     emailPlaceholder: "ornek@firmaniz.com.tr",
     submit: "PDF'i Gönder",
     consent:

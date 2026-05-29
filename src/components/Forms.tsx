@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useT } from "../i18n/useTranslation";
 import { Button } from "./ui/Button";
+import { Download } from "lucide-react";
 
 // API endpoint env-aware: production'da Worker URL'i, dev'de fallback
 const API_BASE =
@@ -42,7 +43,15 @@ export function LeadMagnetForm() {
   if (status === "success") {
     return (
       <div className="bg-gold-50 border-2 border-gold-300 rounded-xl p-6 text-anthracite">
-        <p className="text-sm leading-relaxed">{t.leadMagnet.success}</p>
+        <p className="text-sm leading-relaxed mb-4">{t.leadMagnet.success}</p>
+        <a
+          href={t.leadMagnet.pdfFile}
+          download
+          className="inline-flex items-center gap-2 px-5 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-700 transition-colors text-sm"
+        >
+          <Download className="h-4 w-4" />
+          {t.leadMagnet.downloadCta}
+        </a>
       </div>
     );
   }

@@ -384,6 +384,8 @@ export const de: Dict = {
       "10 Fragen, die Sie sich stellen müssen, bevor Sie Schweißteile nach Deutschland verkaufen",
     description:
       "Aus langjähriger Fertigungs- und Qualitätspraxis in Deutschland. PDF-Leitfaden per E-Mail. Kein Spam — nur die PDF + monatliches Branchenupdate.",
+    pdfFile: "/downloads/DINConnect_10_kritische_Fragen_DE.pdf",
+    downloadCta: "PDF herunterladen",
     emailPlaceholder: "ihre@firma.com",
     submit: "PDF senden",
     consent:

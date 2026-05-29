@@ -32,11 +32,11 @@ export function Home() {
 
         <Container className="relative py-20 md:py-28 lg:py-32">
           <div className="max-w-4xl">
-            {/* Logo amblem — büyük, hero üstünde */}
+            {/* Logo amblem — büyük, hero üstünde (lacivert fonlu) */}
             <img
-              src="/dinconnect-emblem.png"
+              src="/dinconnect-emblem-navy.png"
               alt="DINConnect"
-              className="h-20 md:h-28 w-auto object-contain mb-8 drop-shadow-2xl"
+              className="h-20 md:h-28 w-auto object-contain mb-8"
             />
 
             {/* Eyebrow */}

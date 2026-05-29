@@ -1,14 +1,14 @@
 type LogoProps = {
   variant?: "dark" | "light";
   className?: string;
-  /** "compact" = amblem + wordmark (header), "full" = tam logo görseli (footer/hero) */
+  /** "compact" = amblem + wordmark (header/footer), "full" = tam logo (OG) */
   size?: "compact" | "full";
 };
 
 /**
  * DINConnect logo
- * - compact: altın D|C amblemi (kaynak torcu + köprü + dünya) + "DINConnect" wordmark
- * - full:    sloganlı tam logo görseli
+ * - variant "dark"  → beyaz fonlu amblem (header, açık zemin)
+ * - variant "light" → lacivert fonlu amblem (footer, koyu zemin)
  */
 export function Logo({ variant = "dark", className = "", size = "compact" }: LogoProps) {
   const textColor = variant === "dark" ? "#0A2540" : "#FFFFFF";
@@ -25,11 +25,16 @@ export function Logo({ variant = "dark", className = "", size = "compact" }: Log
     );
   }
 
-  // Header: altın amblem + wordmark
+  // Zemine göre doğru fon: header beyaz, footer lacivert
+  const emblemSrc =
+    variant === "light"
+      ? "/dinconnect-emblem-navy.png"
+      : "/dinconnect-emblem-white.png";
+
   return (
     <div className={`inline-flex items-center gap-3 ${className}`}>
       <img
-        src="/dinconnect-emblem.png"
+        src={emblemSrc}
         alt="DINConnect"
         className="h-9 md:h-11 w-auto object-contain"
       />

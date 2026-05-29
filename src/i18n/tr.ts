@@ -275,6 +275,7 @@ export const tr = {
     caseLabel: "Vaka örneği",
     caseDisclaimer: "* Vaka örnekleri gerçek projelere dayanır; müşteri kimlikleri ticari gizlilik gereği anonimleştirilmiştir.",
     skillsLabel: "Uzmanlık alanları",
+    certsLabel: "Belgeler & sertifikalar",
     caseLabels: {
       situation: "Durum",
       problem: "Sorun",
@@ -292,6 +293,9 @@ export const tr = {
           "AutoCAD",
           "Operasyon koordinasyonu",
         ],
+        certs: [
+          { name: "Lehrer für Metallberufe (Lisans)", issuer: "Sakarya Üniversitesi", year: "2004" },
+        ],
         case: {
           situation:
             "Konya'lı bir tarım makineleri üreticisi 4 farklı Alman müşteriyle paralel görüşme yürütüyordu.",
@@ -304,58 +308,69 @@ export const tr = {
         },
       },
       {
-        name: "Fatih",
-        role: "Schweißfachmann (DVS)",
-        bio: "DVS sertifikalı Schweißfachmann. Almanya'da çelik konstrüksiyon ve basınçlı kap üretiminde uzun yıllık saha deneyimi. EN 1090 (EXC1–EXC4) ve ISO 3834-2 süreçlerinde WPS hazırlama, EN ISO 15614-1 prosedür kalifikasyonu (PQR), EN ISO 9606 kaynakçı sertifikalandırma. MIG/MAG, TIG, MMA kaynak yöntemleri; karbon çeliği, paslanmaz ve alüminyum. ISO 5817 kapsamında kaynak dikiş kalite değerlendirmesi ve sahada kaynakçı eğitimi.",
+        name: "Fatih Karaca",
+        role: "Schweißfachmann & NDT-Prüfer (DVS / TÜV NORD)",
+        bio: "DVS-IIW Uluslararası Schweißfachmann (International Welding Specialist) ve DVS Schweißwerkmeister MSG-Çelik. Almanya'da çelik konstrüksiyon ve basınçlı kap üretiminde uzun yıllık saha deneyimi. Bunun yanında TÜV NORD akrediteli tahribatsız muayene (NDT) uzmanı: görsel muayene (VT2) ve penetrant muayene (PT2), basınçlı ekipman direktifi (PED 2014/68/EU, Kategori III–IV) kapsamında. EN 1090 ve ISO 3834-2 süreçlerinde WPS/PQR, kaynak dikiş kalite değerlendirmesi (ISO 5817) ve sahada kaynakçı eğitimi.",
         skills: [
-          "EN 1090 EXC1–EXC4",
-          "ISO 3834-2",
-          "WPS / PQR",
-          "EN ISO 15614-1",
-          "EN ISO 9606",
-          "MIG/MAG · TIG · MMA",
+          "DVS Int. Schweißfachmann",
+          "DVS Schweißwerkmeister MSG",
+          "VT2 görsel muayene",
+          "PT2 penetrant muayene",
+          "PED 2014/68/EU Kat. III–IV",
+          "EN 1090 / ISO 3834-2",
+          "WPS / PQR (EN ISO 15614-1)",
+          "EN ISO 9606 kaynakçı",
           "ISO 5817 değerlendirme",
-          "Çelik konstrüksiyon",
-          "Basınçlı kap",
-          "Paslanmaz · Alüminyum",
-          "Kaynakçı eğitimi",
+          "MIG/MAG · TIG · MMA",
+          "8D · IHK Schichtführer",
+        ],
+        certs: [
+          { name: "DVS-IIW Internationaler Schweißfachmann", issuer: "DVS-PersZert", year: "2019" },
+          { name: "DVS-Schweißwerkmeister MSG – Stahl", issuer: "DVS SLV", year: "2019" },
+          { name: "VT2 – Sichtprüfung Stufe 2 (DIN EN ISO 9712)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "PT2 – Eindringprüfung Stufe 2 (DIN EN ISO 9712)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "PED Druckgeräterichtlinie Kat. III/IV (VT2+PT2)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "Problemlösung mit 8D-Report", issuer: "TÜV SÜD Akademie", year: "2024" },
+          { name: "Schichtführer und Teamleiter (IHK)", issuer: "IHK Stuttgart", year: "2023" },
         ],
         case: {
           situation:
             "Bursa'da bir sac konstrüksiyon firması Alman pazarı için EN 1090 EXC2 hedefliyordu.",
           problem:
-            "2 farklı danışmanla 8 ay önce başlamış süreç, hâlâ belge yok. WPS dosyaları eksik, kaynakçı sertifikaları geçersiz, WCS atanmamış.",
+            "2 farklı danışmanla 8 ay önce başlamış süreç, hâlâ belge yok. WPS dosyaları eksik, kaynakçı sertifikaları geçersiz, kaynak koordinatörü atanmamış.",
           solution:
-            "Mevcut durum + boşluk haritası, 3 kritik kaynak prosedürünün yeniden kalifikasyonu (PQR), WCS ataması, akredite Türk kuruluşa yeniden başvuru.",
+            "Mevcut durum + boşluk haritası, 3 kritik kaynak prosedürünün yeniden kalifikasyonu (PQR), kaynak koordinasyonu desteği, akredite Türk kuruluşa yeniden başvuru.",
           result:
             "4 ay içinde EN 1090 EXC2 belgesi alındı; aynı yıl ilk Alman müşteriye sevkiyat tamamlandı.",
         },
       },
       {
-        name: "Erkan",
+        name: "Erkan Souleiman",
         role: "Schweißfachmann (DVS)",
-        bio: "DVS sertifikalı Schweißfachmann. Alman otomotiv yan sanayisinde uzun yıllık saha deneyimi. Teknik resim yorumlama (DIN EN ISO 22553 kaynak sembolleri), GD&T toleransları (ISO 1101), 3D koordinat ölçüm (CMM) ile kalite kontrolü. IATF 16949 kalite yönetimi, PPAP / APQP / FMEA dokümantasyonu, 8D problem çözme metodu. ISO 5817 B/C/D seviyelerine göre kaynak dikiş değerlendirmesi ve atölye eğitimi.",
+        bio: "DVS-IIW/EWF Uluslararası Schweißfachmann (International Welding Specialist), DAkkS akrediteli. Kaynak teknolojisi, malzeme bilgisi ve kaynak koordinasyonu odaklı. EN 1090 ve ISO 3834 kapsamında kaynak prosedürü (WPS), kaynakçı kalifikasyonu ve kaynak dikiş kalite değerlendirmesi (ISO 5817). MIG/MAG, TIG ve MMA yöntemlerinde uygulamalı tecrübe; teknik resimde kaynak sembollerinin (DIN EN ISO 22553) yorumlanması.",
         skills: [
-          "DIN EN ISO 22553",
-          "GD&T (ISO 1101)",
-          "CMM 3D ölçüm",
-          "IATF 16949",
-          "PPAP · APQP · FMEA",
-          "8D problem çözme",
-          "ISO 5817 B/C/D",
-          "Otomotiv yan sanayi",
-          "Teknik resim yorumlama",
-          "Atölye eğitimi",
+          "DVS-IIW/EWF Int. Schweißfachmann",
+          "Kaynak teknolojisi",
+          "EN 1090 / ISO 3834",
+          "WPS / kaynak prosedürü",
+          "EN ISO 9606 kaynakçı",
+          "ISO 5817 değerlendirme",
+          "MIG/MAG · TIG · MMA",
+          "DIN EN ISO 22553 semboller",
+          "Malzeme bilgisi",
+        ],
+        certs: [
+          { name: "DVS-IIW/EWF Internationaler Schweißfachmann", issuer: "DVS-PersZert (DAkkS)", year: "2025" },
         ],
         case: {
           situation:
-            "Eskişehir'de bir makine imalat firması Alman otomotiv ana sanayisinden tedarikçi onay süreci için çizim aldı.",
+            "Eskişehir'de bir makine imalat firması Almanya'ya ilk kaynaklı parça siparişini almıştı.",
           problem:
-            "İlk numunede 4 ölçü tolerans dışı; GD&T sembolleri ve ISO 5817 B kalite kaynak dikişi yanlış yorumlanmış.",
+            "Alman çizimindeki kaynak sembolleri (DIN EN ISO 22553) ve istenen dikiş kalitesi (ISO 5817) yanlış yorumlanmış; ilk numune dikiş kalitesi reddedildi.",
           solution:
-            "12 sayfalık çizimin sembol-sembol Türkçe yorumlanması, 3D CMM ile kritik ölçülerin teyidi, atölye için Türkçe WPS ve kontrol planı hazırlığı.",
+            "Çizimdeki tüm kaynak sembollerinin Türkçe yorumlanması, doğru kaynak prosedürü (WPS) önerisi, atölye için Türkçe kontrol talimatı ve kaynakçı brifingi.",
           result:
-            "2. numune ilk denemede onaylandı; 18 aylık tedarikçi onay süreci tamamlandı, seri üretim başladı.",
+            "İkinci numune ilk denemede kabul edildi; firma kaynaklı parça grubunda Alman müşteriye seri sevkiyata başladı.",
         },
       },
     ],

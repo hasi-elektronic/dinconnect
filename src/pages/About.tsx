@@ -1,4 +1,4 @@
-import { MapPin, AlertTriangle, Wrench, Target } from "lucide-react";
+import { MapPin, AlertTriangle, Wrench, Target, BadgeCheck } from "lucide-react";
 import { Container, Section, SectionEyebrow, SectionTitle } from "../components/ui/Layout";
 import { useT } from "../i18n/useTranslation";
 import { useSeo } from "../lib/seo";
@@ -78,6 +78,28 @@ export function About() {
                         </span>
                       ))}
                     </div>
+                  </div>
+                )}
+
+                {/* Sertifika rozetleri */}
+                {member.certs && member.certs.length > 0 && (
+                  <div className="mt-5 pt-5 border-t border-navy-100">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-navy/50 mb-3">
+                      {t.team.certsLabel}
+                    </div>
+                    <ul className="space-y-2">
+                      {member.certs.map((cert, ci) => (
+                        <li key={ci} className="flex items-start gap-2">
+                          <BadgeCheck className="h-4 w-4 text-gold-600 shrink-0 mt-0.5" />
+                          <span className="text-[12px] leading-snug text-anthracite/80">
+                            <span className="font-semibold text-navy">{cert.name}</span>
+                            <span className="text-navy/50">
+                              {" "}· {cert.issuer} · {cert.year}
+                            </span>
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 )}
               </div>

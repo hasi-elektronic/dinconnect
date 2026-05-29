@@ -278,6 +278,7 @@ export const de: Dict = {
     caseLabel: "Fallbeispiel",
     caseDisclaimer: "* Die Fallbeispiele basieren auf realen Projekten; Kundenidentitäten wurden aus Gründen der Vertraulichkeit anonymisiert.",
     skillsLabel: "Kompetenzen",
+    certsLabel: "Nachweise & Zertifikate",
     caseLabels: {
       situation: "Ausgangslage",
       problem: "Problem",
@@ -295,6 +296,9 @@ export const de: Dict = {
           "AutoCAD",
           "Operative Koordination",
         ],
+        certs: [
+          { name: "Lehrer für Metallberufe (Lisans)", issuer: "Universität Sakarya", year: "2004" },
+        ],
         case: {
           situation:
             "Ein Hersteller von Landmaschinen aus Konya betreute parallel vier deutsche Kunden.",
@@ -307,21 +311,30 @@ export const de: Dict = {
         },
       },
       {
-        name: "Fatih",
-        role: "Schweißfachmann (DVS)",
-        bio: "DVS-zertifizierter Schweißfachmann. Langjährige Praxiserfahrung in der deutschen Stahlbau- und Druckbehälterfertigung. WPS-Erstellung nach EN 1090 (EXC1–EXC4) und ISO 3834-2, Verfahrensprüfung nach EN ISO 15614-1 (PQR), Schweißerprüfung nach EN ISO 9606. Schweißverfahren MIG/MAG, WIG, E-Hand; Werkstoffe Baustahl, Edelstahl, Aluminium. Schweißnahtbewertung nach ISO 5817 sowie Schulung von Schweißpersonal vor Ort.",
+        name: "Fatih Karaca",
+        role: "Schweißfachmann & NDT-Prüfer (DVS / TÜV NORD)",
+        bio: "DVS-IIW Internationaler Schweißfachmann (International Welding Specialist) und DVS-Schweißwerkmeister MSG – Stahl. Langjährige Praxiserfahrung in der deutschen Stahlbau- und Druckbehälterfertigung. Zusätzlich TÜV-NORD-akkreditierter Prüfer für zerstörungsfreie Prüfung (NDT): Sichtprüfung (VT2) und Eindringprüfung (PT2), auch im Geltungsbereich der Druckgeräterichtlinie (PED 2014/68/EU, Kategorie III–IV). WPS/PQR nach EN 1090 und ISO 3834-2, Schweißnahtbewertung nach ISO 5817 und Schulung von Schweißpersonal vor Ort.",
         skills: [
-          "EN 1090 EXC1–EXC4",
-          "ISO 3834-2",
-          "WPS / PQR",
-          "EN ISO 15614-1",
-          "EN ISO 9606",
-          "MIG/MAG · WIG · E-Hand",
+          "DVS Int. Schweißfachmann",
+          "DVS Schweißwerkmeister MSG",
+          "VT2 Sichtprüfung",
+          "PT2 Eindringprüfung",
+          "PED 2014/68/EU Kat. III–IV",
+          "EN 1090 / ISO 3834-2",
+          "WPS / PQR (EN ISO 15614-1)",
+          "EN ISO 9606 Schweißer",
           "ISO 5817 Bewertung",
-          "Stahlbau",
-          "Druckbehälterbau",
-          "Edelstahl · Aluminium",
-          "Schweißerschulung",
+          "MIG/MAG · WIG · E-Hand",
+          "8D · IHK Schichtführer",
+        ],
+        certs: [
+          { name: "DVS-IIW Internationaler Schweißfachmann", issuer: "DVS-PersZert", year: "2019" },
+          { name: "DVS-Schweißwerkmeister MSG – Stahl", issuer: "DVS SLV", year: "2019" },
+          { name: "VT2 – Sichtprüfung Stufe 2 (DIN EN ISO 9712)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "PT2 – Eindringprüfung Stufe 2 (DIN EN ISO 9712)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "PED Druckgeräte Kat. III/IV (VT2+PT2)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "Problemlösung mit 8D-Report", issuer: "TÜV SÜD Akademie", year: "2024" },
+          { name: "Schichtführer und Teamleiter (IHK)", issuer: "IHK Stuttgart", year: "2023" },
         ],
         case: {
           situation:
@@ -329,36 +342,38 @@ export const de: Dict = {
           problem:
             "Vor 8 Monaten mit zwei verschiedenen Beratern begonnen, noch kein Zertifikat. WPS-Dokumente unvollständig, Schweißerprüfungen ungültig, kein Schweißaufsichtspersonal benannt.",
           solution:
-            "Ist-Analyse mit Lückenkarte, Requalifizierung von 3 kritischen Schweißverfahren (PQR), Benennung des WCS, erneute Bewerbung bei akkreditierter Stelle in der Türkei.",
+            "Ist-Analyse mit Lückenkarte, Requalifizierung von 3 kritischen Schweißverfahren (PQR), Unterstützung bei der Schweißaufsicht, erneute Bewerbung bei akkreditierter Stelle in der Türkei.",
           result:
             "EN 1090 EXC2 in 4 Monaten erlangt; im selben Jahr erste Lieferung an deutschen Kunden abgeschlossen.",
         },
       },
       {
-        name: "Erkan",
+        name: "Erkan Souleiman",
         role: "Schweißfachmann (DVS)",
-        bio: "DVS-zertifizierter Schweißfachmann. Langjährige Praxiserfahrung in der deutschen Automobilzulieferindustrie. Zeichnungsinterpretation (Schweißsymbole nach DIN EN ISO 22553), GD&T-Toleranzen (ISO 1101), 3D-Koordinatenmessung (KMG) zur Qualitätskontrolle. IATF 16949 Qualitätsmanagement, PPAP / APQP / FMEA-Dokumentation, 8D-Problemlösungsmethode. Schweißnahtbewertung nach ISO 5817 B/C/D sowie Werkstattschulungen.",
+        bio: "DVS-IIW/EWF Internationaler Schweißfachmann (International Welding Specialist), DAkkS-akkreditiert. Schwerpunkt Schweißtechnik, Werkstoffkunde und Schweißkoordination. WPS, Schweißerqualifizierung und Schweißnahtbewertung (ISO 5817) im Rahmen von EN 1090 und ISO 3834. Praktische Erfahrung in MIG/MAG, WIG und E-Hand; Interpretation von Schweißsymbolen (DIN EN ISO 22553) in technischen Zeichnungen.",
         skills: [
-          "DIN EN ISO 22553",
-          "GD&T (ISO 1101)",
-          "KMG 3D-Messung",
-          "IATF 16949",
-          "PPAP · APQP · FMEA",
-          "8D-Methode",
-          "ISO 5817 B/C/D",
-          "Automotive-Zulieferer",
-          "Zeichnungsinterpretation",
-          "Werkstattschulung",
+          "DVS-IIW/EWF Int. Schweißfachmann",
+          "Schweißtechnik",
+          "EN 1090 / ISO 3834",
+          "WPS / Schweißverfahren",
+          "EN ISO 9606 Schweißer",
+          "ISO 5817 Bewertung",
+          "MIG/MAG · WIG · E-Hand",
+          "DIN EN ISO 22553 Symbole",
+          "Werkstoffkunde",
+        ],
+        certs: [
+          { name: "DVS-IIW/EWF Internationaler Schweißfachmann", issuer: "DVS-PersZert (DAkkS)", year: "2025" },
         ],
         case: {
           situation:
-            "Ein Maschinenbauunternehmen in Eskişehir erhielt eine Zeichnung für die Lieferantenfreigabe eines deutschen Automotive-OEM.",
+            "Ein Maschinenbauunternehmen in Eskişehir erhielt seine erste Bestellung für Schweißteile aus Deutschland.",
           problem:
-            "Im ersten Muster lagen 4 Maße außerhalb der Toleranz; GD&T-Symbole und Schweißnahtgüte B nach ISO 5817 wurden falsch interpretiert.",
+            "Die Schweißsymbole (DIN EN ISO 22553) und die geforderte Nahtgüte (ISO 5817) in der deutschen Zeichnung wurden falsch interpretiert; die Nahtgüte des ersten Musters wurde abgelehnt.",
           solution:
-            "Symbol-für-Symbol-Übersetzung der 12-seitigen Zeichnung auf Türkisch, KMG-Verifikation der kritischen Maße, türkische WPS und Prüfplan für die Werkstatt.",
+            "Türkische Interpretation aller Schweißsymbole der Zeichnung, Empfehlung des korrekten Schweißverfahrens (WPS), türkische Prüfanweisung und Briefing der Schweißer für die Werkstatt.",
           result:
-            "Zweites Muster im ersten Anlauf freigegeben; 18-monatiger Lieferantenfreigabeprozess abgeschlossen, Serienproduktion gestartet.",
+            "Zweites Muster im ersten Anlauf angenommen; das Unternehmen startete die Serienlieferung der Schweißteilgruppe an den deutschen Kunden.",
         },
       },
     ],

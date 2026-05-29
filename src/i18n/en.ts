@@ -278,6 +278,7 @@ export const en: Dict = {
     caseLabel: "Case example",
     caseDisclaimer: "* Case examples are based on real projects; customer identities have been anonymized for commercial confidentiality.",
     skillsLabel: "Areas of expertise",
+    certsLabel: "Credentials & certificates",
     caseLabels: {
       situation: "Situation",
       problem: "Problem",
@@ -295,6 +296,9 @@ export const en: Dict = {
           "AutoCAD",
           "Operations coordination",
         ],
+        certs: [
+          { name: "Teacher for Metal Trades (degree)", issuer: "Sakarya University", year: "2004" },
+        ],
         case: {
           situation:
             "A farm-machinery manufacturer from Konya was running parallel talks with four German customers.",
@@ -307,21 +311,30 @@ export const en: Dict = {
         },
       },
       {
-        name: "Fatih",
-        role: "Welding Specialist (DVS)",
-        bio: "DVS-certified welding specialist. Long-standing field experience in steel construction and pressure-vessel manufacturing in Germany. WPS creation for EN 1090 (EXC1–EXC4) and ISO 3834-2, procedure qualification per EN ISO 15614-1 (PQR), welder certification per EN ISO 9606. MIG/MAG, TIG, MMA welding processes; carbon steel, stainless and aluminium. Weld seam assessment per ISO 5817 and on-site welder training.",
+        name: "Fatih Karaca",
+        role: "Welding Specialist & NDT Inspector (DVS / TÜV NORD)",
+        bio: "DVS-IIW International Welding Specialist and DVS Welding Master MSG – Steel. Long-standing field experience in steel construction and pressure-vessel manufacturing in Germany. Additionally a TÜV NORD-accredited non-destructive testing (NDT) inspector: visual testing (VT2) and penetrant testing (PT2), including within the scope of the Pressure Equipment Directive (PED 2014/68/EU, Category III–IV). WPS/PQR per EN 1090 and ISO 3834-2, weld seam assessment per ISO 5817, and on-site welder training.",
         skills: [
-          "EN 1090 EXC1–EXC4",
-          "ISO 3834-2",
-          "WPS / PQR",
-          "EN ISO 15614-1",
-          "EN ISO 9606",
-          "MIG/MAG · TIG · MMA",
+          "DVS Int. Welding Specialist",
+          "DVS Welding Master MSG",
+          "VT2 visual testing",
+          "PT2 penetrant testing",
+          "PED 2014/68/EU Cat. III–IV",
+          "EN 1090 / ISO 3834-2",
+          "WPS / PQR (EN ISO 15614-1)",
+          "EN ISO 9606 welder",
           "ISO 5817 assessment",
-          "Steel construction",
-          "Pressure vessels",
-          "Stainless · Aluminium",
-          "Welder training",
+          "MIG/MAG · TIG · MMA",
+          "8D · IHK shift leader",
+        ],
+        certs: [
+          { name: "DVS-IIW International Welding Specialist", issuer: "DVS-PersZert", year: "2019" },
+          { name: "DVS Welding Master MSG – Steel", issuer: "DVS SLV", year: "2019" },
+          { name: "VT2 – Visual Testing Level 2 (DIN EN ISO 9712)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "PT2 – Penetrant Testing Level 2 (DIN EN ISO 9712)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "PED Pressure Equipment Cat. III/IV (VT2+PT2)", issuer: "TÜV NORD", year: "2022–2027" },
+          { name: "Problem Solving with 8D-Report", issuer: "TÜV SÜD Akademie", year: "2024" },
+          { name: "Shift Leader & Team Leader (IHK)", issuer: "IHK Stuttgart", year: "2023" },
         ],
         case: {
           situation:
@@ -329,36 +342,38 @@ export const en: Dict = {
           problem:
             "Started 8 months earlier with two different consultants, still no certificate. WPS files incomplete, welder certificates invalid, no welding coordinator assigned.",
           solution:
-            "Current-state and gap map, requalification of 3 critical welding procedures (PQR), welding coordinator assignment, re-application to an accredited Turkish body.",
+            "Current-state and gap map, requalification of 3 critical welding procedures (PQR), welding coordination support, re-application to an accredited Turkish body.",
           result:
             "EN 1090 EXC2 obtained within 4 months; first shipment to a German customer completed the same year.",
         },
       },
       {
-        name: "Erkan",
+        name: "Erkan Souleiman",
         role: "Welding Specialist (DVS)",
-        bio: "DVS-certified welding specialist. Long-standing field experience in the German automotive supply industry. Drawing interpretation (weld symbols per DIN EN ISO 22553), GD&T tolerances (ISO 1101), 3D coordinate measurement (CMM) for quality control. IATF 16949 quality management, PPAP / APQP / FMEA documentation, 8D problem-solving method. Weld seam assessment per ISO 5817 B/C/D and workshop training.",
+        bio: "DVS-IIW/EWF International Welding Specialist, DAkkS-accredited. Focused on welding technology, materials science and welding coordination. WPS, welder qualification and weld seam assessment (ISO 5817) within the scope of EN 1090 and ISO 3834. Hands-on experience in MIG/MAG, TIG and MMA; interpretation of weld symbols (DIN EN ISO 22553) in technical drawings.",
         skills: [
-          "DIN EN ISO 22553",
-          "GD&T (ISO 1101)",
-          "CMM 3D measurement",
-          "IATF 16949",
-          "PPAP · APQP · FMEA",
-          "8D problem-solving",
-          "ISO 5817 B/C/D",
-          "Automotive supply",
-          "Drawing interpretation",
-          "Workshop training",
+          "DVS-IIW/EWF Int. Welding Specialist",
+          "Welding technology",
+          "EN 1090 / ISO 3834",
+          "WPS / welding procedures",
+          "EN ISO 9606 welder",
+          "ISO 5817 assessment",
+          "MIG/MAG · TIG · MMA",
+          "DIN EN ISO 22553 symbols",
+          "Materials science",
+        ],
+        certs: [
+          { name: "DVS-IIW/EWF International Welding Specialist", issuer: "DVS-PersZert (DAkkS)", year: "2025" },
         ],
         case: {
           situation:
-            "A machine-building firm in Eskişehir received a drawing for a German automotive OEM's supplier approval process.",
+            "A machine-building firm in Eskişehir had received its first order for welded parts from Germany.",
           problem:
-            "Four dimensions out of tolerance on the first sample; GD&T symbols and ISO 5817 quality-B weld seam had been misinterpreted.",
+            "The weld symbols (DIN EN ISO 22553) and required seam quality (ISO 5817) on the German drawing were misinterpreted; the first sample's weld quality was rejected.",
           solution:
-            "Symbol-by-symbol interpretation of the 12-page drawing in Turkish, 3D CMM verification of critical dimensions, Turkish WPS and control plan for the workshop.",
+            "Turkish interpretation of every weld symbol on the drawing, recommendation of the correct welding procedure (WPS), a Turkish inspection instruction and welder briefing for the workshop.",
           result:
-            "Second sample approved on the first attempt; the 18-month supplier approval process completed, series production started.",
+            "Second sample accepted on the first attempt; the firm began series shipments of the welded part group to the German customer.",
         },
       },
     ],

@@ -50,7 +50,7 @@ export function ServiceDetail({ service }: { service: ServiceKey }) {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <SectionEyebrow>
-              {lang === "tr" ? "Hedef kitle" : "Zielgruppe"}
+              {t.ui.targetGroup}
             </SectionEyebrow>
             <SectionTitle>{s.forWhom.title}</SectionTitle>
           </div>
@@ -73,7 +73,7 @@ export function ServiceDetail({ service }: { service: ServiceKey }) {
       <Section className="bg-offwhite">
         <div className="max-w-3xl mb-12 md:mb-16">
           <SectionEyebrow>
-            {lang === "tr" ? "Süreç" : "Ablauf"}
+            {t.ui.process}
           </SectionEyebrow>
           <SectionTitle>{s.process.title}</SectionTitle>
         </div>

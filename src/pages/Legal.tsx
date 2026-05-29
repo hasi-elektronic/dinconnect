@@ -39,14 +39,14 @@ export function Impressum() {
             {ADDRESS_LINE_1} <br />
             {ADDRESS_LINE_2} <br />
             {ADDRESS_LINE_3} <br />
-            {lang === "tr" ? ADDRESS_COUNTRY_TR : ADDRESS_COUNTRY_DE}
+            {t.ui.countryGermany}
           </address>
 
           <h2 className="font-display font-bold text-2xl text-navy mb-4">
             {t.legal.impressum.contactTitle}
           </h2>
           <p className="text-anthracite leading-relaxed mb-8">
-            {lang === "tr" ? "Telefon" : "Telefon"}: {PHONE} <br />
+            {t.contact.form.phone}: {PHONE} <br />
             E-Mail:{" "}
             <a href={`mailto:${EMAIL}`} className="text-gold-600 hover:underline">
               {EMAIL}

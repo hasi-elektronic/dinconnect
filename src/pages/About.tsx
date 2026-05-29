@@ -29,7 +29,7 @@ export function About() {
       <Section className="bg-white">
         <div className="max-w-3xl mx-auto">
           <SectionEyebrow>
-            {lang === "tr" ? "Hikaye" : "Geschichte"}
+            {t.ui.story}
           </SectionEyebrow>
           <SectionTitle className="mb-8">{t.about.story.title}</SectionTitle>
           <div className="space-y-5 text-lg text-anthracite/85 leading-relaxed">
@@ -118,9 +118,7 @@ export function About() {
 
         {/* Disclaimer for anonymous cases */}
         <p className="mt-8 text-xs text-anthracite/55 max-w-3xl">
-          {lang === "tr"
-            ? "* Vaka örnekleri gerçek projelere dayanır; müşteri kimlikleri ticari gizlilik gereği anonimleştirilmiştir."
-            : "* Die Fallbeispiele basieren auf realen Projekten; Kundenidentitäten wurden aus Gründen der Vertraulichkeit anonymisiert."}
+{t.team.caseDisclaimer}
         </p>
       </Section>
 
@@ -128,7 +126,7 @@ export function About() {
       <Section className="bg-white">
         <div className="max-w-3xl mb-12">
           <SectionEyebrow>
-            {lang === "tr" ? "Değerlerimiz" : "Werte"}
+            {t.ui.values}
           </SectionEyebrow>
           <SectionTitle>{t.about.values.title}</SectionTitle>
         </div>
@@ -151,7 +149,7 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <SectionEyebrow>
-              {lang === "tr" ? "Konumlar" : "Standorte"}
+              {t.ui.locations}
             </SectionEyebrow>
             <SectionTitle>{t.about.location.title}</SectionTitle>
             <div className="mt-7 p-6 bg-navy text-white rounded-xl">
@@ -159,10 +157,10 @@ export function About() {
                 <MapPin className="h-6 w-6 text-gold flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-display font-bold text-lg">
-                    {lang === "tr" ? "Operasyon Merkezi" : "Operationszentrum"}
+                    {t.ui.operationsCenter}
                   </div>
                   <div className="mt-1 text-white/85">
-                    Vaihingen an der Enz, {lang === "tr" ? "Almanya" : "Deutschland"}
+                    Vaihingen an der Enz, {t.ui.countryGermany}
                   </div>
                 </div>
               </div>

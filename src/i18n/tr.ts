@@ -273,6 +273,7 @@ export const tr = {
     eyebrow: "Ekip",
     title: "Türk-Alman uzman ekibi",
     caseLabel: "Vaka örneği",
+    caseDisclaimer: "* Vaka örnekleri gerçek projelere dayanır; müşteri kimlikleri ticari gizlilik gereği anonimleştirilmiştir.",
     skillsLabel: "Uzmanlık alanları",
     caseLabels: {
       situation: "Durum",
@@ -554,6 +555,35 @@ export const tr = {
       ],
       lastUpdated: "Son güncelleme: Mayıs 2026",
     },
+  },
+  ui: {
+    learnMore: "Detaylar",
+    countryGermany: "Almanya",
+    story: "Hikaye",
+    values: "Değerlerimiz",
+    locations: "Konumlar",
+    operationsCenter: "Operasyon Merkezi",
+    form: "Form",
+    turkey: "Türkiye",
+    turkeyWide: "Türkiye geneli",
+    downloadNow: "Hemen indir",
+    leadBullets: [
+      "Almanya'daki uzun yıllık saha ve kalite tecrübemizin özeti",
+      "10 kritik soru + 10 doğrulanmış cevap",
+      "Anında PDF, e-posta listesinden istediğinde çık",
+    ],
+    leadFormSub: "E-posta adresinizi bırakın, PDF'i hemen gönderelim.",
+    serviceAreaTitle:
+      "Hizmet bölgelerimiz Türkiye'nin sanayi merkezlerini kapsar",
+    serviceAreaDesc:
+      "Vaihingen ofisimizden uçakla 4 saatlik mesafede tüm büyük metal ve makine imalatı OSB'lerine ulaşıyoruz. Yerinde değerlendirme, fabrika ziyareti ve audit hazırlığı için sahaya geliyoruz.",
+    contactFormTitle: "Ön görüşme talebinizi bırakın",
+    pdfMeta: "PDF · ~ 2 MB · Türkçe",
+    blog: "Blog",
+    links: "Bağlantılar",
+    overview: "Genel bakış",
+    targetGroup: "Hedef kitle",
+    process: "Süreç",
   },
 };
 

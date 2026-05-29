@@ -37,21 +37,21 @@ export function Services() {
             title={t.services.certification.title}
             description={t.services.certification.summary}
             href={r("certification", lang)}
-            cta={lang === "tr" ? "Detaylar" : "Mehr erfahren"}
+            cta={t.ui.learnMore}
           />
           <ServiceCard
             icon="drawing"
             title={t.services.drawings.title}
             description={t.services.drawings.summary}
             href={r("drawings", lang)}
-            cta={lang === "tr" ? "Detaylar" : "Mehr erfahren"}
+            cta={t.ui.learnMore}
           />
           <ServiceCard
             icon="handshake"
             title={t.services.representation.title}
             description={t.services.representation.summary}
             href={r("representation", lang)}
-            cta={lang === "tr" ? "Detaylar" : "Mehr erfahren"}
+            cta={t.ui.learnMore}
           />
         </div>
       </Section>

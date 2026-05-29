@@ -276,6 +276,7 @@ export const de: Dict = {
     eyebrow: "Team",
     title: "Türkisch-deutsches Fachteam",
     caseLabel: "Fallbeispiel",
+    caseDisclaimer: "* Die Fallbeispiele basieren auf realen Projekten; Kundenidentitäten wurden aus Gründen der Vertraulichkeit anonymisiert.",
     skillsLabel: "Kompetenzen",
     caseLabels: {
       situation: "Ausgangslage",
@@ -559,4 +560,34 @@ export const de: Dict = {
       lastUpdated: "Letzte Aktualisierung: Mai 2026",
     },
   },
+  ui: {
+    learnMore: "Mehr erfahren",
+    countryGermany: "Deutschland",
+    story: "Geschichte",
+    values: "Werte",
+    locations: "Standorte",
+    operationsCenter: "Operationszentrum",
+    form: "Formular",
+    turkey: "Türkei",
+    turkeyWide: "Türkeiweit",
+    downloadNow: "Jetzt herunterladen",
+    leadBullets: [
+      "Langjährige Praxis aus der deutschen Fertigung zusammengefasst",
+      "10 kritische Fragen + 10 belastbare Antworten",
+      "Sofort als PDF, jederzeit abbestellbar",
+    ],
+    leadFormSub: "Lassen Sie Ihre E-Mail da, wir senden die PDF sofort.",
+    serviceAreaTitle:
+      "Unsere Servicegebiete decken die türkischen Industriezentren ab",
+    serviceAreaDesc:
+      "Von unserem Standort in Vaihingen aus erreichen wir alle wichtigen Industrie- und Maschinenbauzonen der Türkei in 4 Flugstunden. Wir kommen vor Ort für Bewertungen, Werksbesuche und Audit-Vorbereitungen.",
+    contactFormTitle: "Erstgespräch anfragen",
+    pdfMeta: "PDF · ~ 2 MB · auf Deutsch",
+    blog: "Blog",
+    links: "Links",
+    overview: "Überblick",
+    targetGroup: "Zielgruppe",
+    process: "Ablauf",
+  },
 };
+

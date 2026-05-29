@@ -2,10 +2,11 @@ import { createContext, useContext, type ReactNode } from "react";
 import { useLocation } from "wouter";
 import { tr } from "./tr";
 import { de } from "./de";
+import { en } from "./en";
 
-export type Lang = "tr" | "de";
+export type Lang = "tr" | "de" | "en";
 
-const dictionaries = { tr, de } as const;
+const dictionaries = { tr, de, en } as const;
 
 type Ctx = {
   lang: Lang;
@@ -15,11 +16,13 @@ type Ctx = {
 const I18nContext = createContext<Ctx | null>(null);
 
 /**
- * URL'den dil tespit eder. `/de/...` → de, diğer her şey → tr (default).
- * Root path `/` Türkçe ana sayfa.
+ * URL'den dil tespit eder.
+ * `/de/...` → de, `/en/...` → en, diğer her şey → tr (default).
  */
 export function detectLang(pathname: string): Lang {
-  return pathname.startsWith("/de") ? "de" : "tr";
+  if (pathname === "/de" || pathname.startsWith("/de/")) return "de";
+  if (pathname === "/en" || pathname.startsWith("/en/")) return "en";
+  return "tr";
 }
 
 export function I18nProvider({ children }: { children: ReactNode }) {
@@ -27,7 +30,6 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const lang = detectLang(location);
   const t = dictionaries[lang];
 
-  // <html lang="..."> attribute güncelle (SEO + accessibility)
   if (typeof document !== "undefined") {
     document.documentElement.lang = lang;
   }
@@ -43,80 +45,59 @@ export function useT() {
   return ctx;
 }
 
+// Tüm route eşlemeleri tek kaynak
+type RouteKey =
+  | "home"
+  | "services"
+  | "certification"
+  | "drawings"
+  | "representation"
+  | "about"
+  | "resources"
+  | "contact"
+  | "impressum"
+  | "datenschutz";
+
+const ROUTES: Record<RouteKey, Record<Lang, string>> = {
+  home: { tr: "/", de: "/de", en: "/en" },
+  services: { tr: "/hizmetler", de: "/de/leistungen", en: "/en/services" },
+  certification: {
+    tr: "/hizmetler/belge-yol-haritasi",
+    de: "/de/leistungen/zertifizierung",
+    en: "/en/services/certification",
+  },
+  drawings: {
+    tr: "/hizmetler/teknik-resim",
+    de: "/de/leistungen/zeichnungsinterpretation",
+    en: "/en/services/drawing-interpretation",
+  },
+  representation: {
+    tr: "/hizmetler/temsil",
+    de: "/de/leistungen/vertretung",
+    en: "/en/services/representation",
+  },
+  about: { tr: "/hakkimizda", de: "/de/ueber-uns", en: "/en/about" },
+  resources: { tr: "/kaynaklar", de: "/de/ressourcen", en: "/en/resources" },
+  contact: { tr: "/iletisim", de: "/de/kontakt", en: "/en/contact" },
+  impressum: { tr: "/impressum", de: "/de/impressum", en: "/en/imprint" },
+  datenschutz: { tr: "/gizlilik", de: "/de/datenschutz", en: "/en/privacy" },
+};
+
 /**
- * Mevcut dil için aynı sayfada karşı dile geçiş URL'i.
- * /hizmetler → /de/leistungen gibi route translation
+ * Mevcut path'i hedef dile çevirir (aynı sayfa, karşı dil).
  */
 export function translatePath(currentPath: string, targetLang: Lang): string {
-  // Path mappings
-  const routes: Record<string, { tr: string; de: string }> = {
-    home: { tr: "/", de: "/de" },
-    services: { tr: "/hizmetler", de: "/de/leistungen" },
-    certification: {
-      tr: "/hizmetler/belge-yol-haritasi",
-      de: "/de/leistungen/zertifizierung",
-    },
-    drawings: {
-      tr: "/hizmetler/teknik-resim",
-      de: "/de/leistungen/zeichnungsinterpretation",
-    },
-    representation: {
-      tr: "/hizmetler/temsil",
-      de: "/de/leistungen/vertretung",
-    },
-    about: { tr: "/hakkimizda", de: "/de/ueber-uns" },
-    resources: { tr: "/kaynaklar", de: "/de/ressourcen" },
-    contact: { tr: "/iletisim", de: "/de/kontakt" },
-    impressum: { tr: "/impressum", de: "/de/impressum" },
-    datenschutz: { tr: "/gizlilik", de: "/de/datenschutz" },
-  };
-
-  for (const r of Object.values(routes)) {
-    if (currentPath === r.tr) return r[targetLang];
-    if (currentPath === r.de) return r[targetLang];
+  for (const route of Object.values(ROUTES)) {
+    for (const lang of ["tr", "de", "en"] as Lang[]) {
+      if (currentPath === route[lang]) return route[targetLang];
+    }
   }
-  // Bilinmiyor → root
-  return targetLang === "tr" ? "/" : "/de";
+  return ROUTES.home[targetLang];
 }
 
 /**
- * Route helper — bir route key'i mevcut dile çevirir.
- * Nav linklerinde kullanılır.
+ * Route key'i mevcut dile çevirir. Nav linklerinde kullanılır.
  */
-export function r(
-  key:
-    | "home"
-    | "services"
-    | "certification"
-    | "drawings"
-    | "representation"
-    | "about"
-    | "resources"
-    | "contact"
-    | "impressum"
-    | "datenschutz",
-  lang: Lang,
-): string {
-  const routes: Record<typeof key, { tr: string; de: string }> = {
-    home: { tr: "/", de: "/de" },
-    services: { tr: "/hizmetler", de: "/de/leistungen" },
-    certification: {
-      tr: "/hizmetler/belge-yol-haritasi",
-      de: "/de/leistungen/zertifizierung",
-    },
-    drawings: {
-      tr: "/hizmetler/teknik-resim",
-      de: "/de/leistungen/zeichnungsinterpretation",
-    },
-    representation: {
-      tr: "/hizmetler/temsil",
-      de: "/de/leistungen/vertretung",
-    },
-    about: { tr: "/hakkimizda", de: "/de/ueber-uns" },
-    resources: { tr: "/kaynaklar", de: "/de/ressourcen" },
-    contact: { tr: "/iletisim", de: "/de/kontakt" },
-    impressum: { tr: "/impressum", de: "/de/impressum" },
-    datenschutz: { tr: "/gizlilik", de: "/de/datenschutz" },
-  };
-  return routes[key][lang];
+export function r(key: RouteKey, lang: Lang): string {
+  return ROUTES[key][lang];
 }

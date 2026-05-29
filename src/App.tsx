@@ -87,6 +87,24 @@ export function App() {
             <Route path="/de/impressum" component={Impressum} />
             <Route path="/de/datenschutz" component={Datenschutz} />
 
+            {/* İngilizce rotalar */}
+            <Route path="/en" component={Home} />
+            <Route path="/en/services" component={Services} />
+            <Route path="/en/services/certification">
+              <ServiceDetail service="certification" />
+            </Route>
+            <Route path="/en/services/drawing-interpretation">
+              <ServiceDetail service="drawings" />
+            </Route>
+            <Route path="/en/services/representation">
+              <ServiceDetail service="representation" />
+            </Route>
+            <Route path="/en/about" component={About} />
+            <Route path="/en/resources" component={Resources} />
+            <Route path="/en/contact" component={Contact} />
+            <Route path="/en/imprint" component={Impressum} />
+            <Route path="/en/privacy" component={Datenschutz} />
+
             {/* 404 */}
             <Route component={NotFound} />
           </Switch>

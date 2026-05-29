@@ -37,7 +37,7 @@ export function Resources() {
             </p>
             <div className="mt-7 flex items-center gap-3 text-sm text-anthracite/70">
               <Download className="h-4 w-4 text-gold" />
-              <span>{lang === "tr" ? "PDF · ~ 2 MB · Türkçe" : "PDF · ~ 2 MB · auf Deutsch"}</span>
+              <span>{t.ui.pdfMeta}</span>
             </div>
           </div>
           <div className="bg-white rounded-2xl p-7 md:p-8 border-2 border-navy-100">
@@ -50,7 +50,7 @@ export function Resources() {
       <Section className="bg-white">
         <div className="max-w-3xl mb-10">
           <SectionEyebrow>
-            {lang === "tr" ? "Blog" : "Blog"}
+            {t.ui.blog}
           </SectionEyebrow>
           <SectionTitle>{t.resources.blogTitle}</SectionTitle>
         </div>
@@ -70,7 +70,7 @@ export function Resources() {
       <Section className="bg-offwhite">
         <div className="max-w-3xl mb-10">
           <SectionEyebrow>
-            {lang === "tr" ? "Bağlantılar" : "Links"}
+            {t.ui.links}
           </SectionEyebrow>
           <SectionTitle>{t.resources.linksTitle}</SectionTitle>
         </div>

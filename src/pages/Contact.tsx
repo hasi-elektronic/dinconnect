@@ -34,12 +34,10 @@ export function Contact() {
           {/* Form */}
           <div className="lg:col-span-7">
             <SectionEyebrow>
-              {lang === "tr" ? "Form" : "Formular"}
+              {t.ui.form}
             </SectionEyebrow>
             <SectionTitle className="mb-8">
-              {lang === "tr"
-                ? "Ön görüşme talebinizi bırakın"
-                : "Erstgespräch anfragen"}
+{t.ui.contactFormTitle}
             </SectionTitle>
             <ContactForm />
           </div>
@@ -106,7 +104,7 @@ export function Contact() {
       <Section className="bg-offwhite">
         <div className="max-w-3xl mb-10">
           <SectionEyebrow>
-            {lang === "tr" ? "Türkiye" : "Türkei"}
+            {t.ui.turkey}
           </SectionEyebrow>
           <SectionTitle>{t.contact.serviceArea.title}</SectionTitle>
           <p className="mt-5 text-anthracite/80 leading-relaxed">

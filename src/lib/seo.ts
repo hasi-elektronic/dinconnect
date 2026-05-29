@@ -26,7 +26,10 @@ export function useSeo({ title, description }: SeoProps) {
     setMeta("og:title", title);
     setMeta("og:description", description);
     setMeta("og:type", "website");
-    setMeta("og:locale", document.documentElement.lang === "de" ? "de_DE" : "tr_TR");
+    const htmlLang = document.documentElement.lang;
+    const ogLocale =
+      htmlLang === "de" ? "de_DE" : htmlLang === "en" ? "en_US" : "tr_TR";
+    setMeta("og:locale", ogLocale);
 
     // Twitter
     setMeta("twitter:card", "summary_large_image");

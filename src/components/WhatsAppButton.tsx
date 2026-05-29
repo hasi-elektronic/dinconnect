@@ -6,12 +6,17 @@ const WHATSAPP_NUMBER = "491601236060"; // wa.me formatı (+ yok, boşluk yok)
 export function WhatsAppButton() {
   const message_tr = "Merhaba DINConnect ekibi, danışmanlık hakkında bilgi almak istiyorum.";
   const message_de = "Guten Tag DINConnect-Team, ich möchte Informationen zur Beratung.";
+  const message_en = "Hello DINConnect team, I'd like information about your consulting services.";
 
-  // URL'den dili tespit et (basit, hook'a ihtiyaç yok — bu component her zaman mount)
-  const isGerman =
-    typeof window !== "undefined" && window.location.pathname.startsWith("/de");
-  const message = isGerman ? message_de : message_tr;
-  const label = isGerman ? "WhatsApp Kontakt" : "WhatsApp İletişim";
+  const path =
+    typeof window !== "undefined" ? window.location.pathname : "/";
+  const lang = path === "/de" || path.startsWith("/de/")
+    ? "de"
+    : path === "/en" || path.startsWith("/en/")
+      ? "en"
+      : "tr";
+  const message = lang === "de" ? message_de : lang === "en" ? message_en : message_tr;
+  const label = lang === "de" ? "WhatsApp Kontakt" : lang === "en" ? "WhatsApp Contact" : "WhatsApp İletişim";
 
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 

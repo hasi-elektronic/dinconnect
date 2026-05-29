@@ -133,21 +133,21 @@ export function Home() {
             title={t.services.certification.title}
             description={t.services.certification.summary}
             href={r("certification", lang)}
-            cta={lang === "tr" ? "Detaylar" : "Mehr erfahren"}
+            cta={t.ui.learnMore}
           />
           <ServiceCard
             icon="drawing"
             title={t.services.drawings.title}
             description={t.services.drawings.summary}
             href={r("drawings", lang)}
-            cta={lang === "tr" ? "Detaylar" : "Mehr erfahren"}
+            cta={t.ui.learnMore}
           />
           <ServiceCard
             icon="handshake"
             title={t.services.representation.title}
             description={t.services.representation.summary}
             href={r("representation", lang)}
-            cta={lang === "tr" ? "Detaylar" : "Mehr erfahren"}
+            cta={t.ui.learnMore}
           />
         </div>
       </Section>
@@ -222,9 +222,7 @@ export function Home() {
 
               <div className="mt-7 space-y-3">
                 {[
-                  lang === "tr" ? "Almanya'daki uzun yıllık saha ve kalite tecrübemizin özeti" : "Langjährige Praxis aus der deutschen Fertigung zusammengefasst",
-                  lang === "tr" ? "10 kritik soru + 10 doğrulanmış cevap" : "10 kritische Fragen + 10 belastbare Antworten",
-                  lang === "tr" ? "Anında PDF, e-posta listesinden istediğinde çık" : "Sofort als PDF, jederzeit abbestellbar",
+...t.ui.leadBullets,
                 ].map((s, i) => (
                   <div key={i} className="flex items-start gap-3 text-white/85">
                     <Check className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
@@ -236,12 +234,10 @@ export function Home() {
 
             <div className="bg-white rounded-2xl p-7 md:p-8 shadow-2xl">
               <h3 className="font-display font-bold text-xl text-navy mb-2">
-                {lang === "tr" ? "Hemen indir" : "Jetzt herunterladen"}
+                {t.ui.downloadNow}
               </h3>
               <p className="text-sm text-anthracite/70 mb-5">
-                {lang === "tr"
-                  ? "E-posta adresinizi bırakın, PDF'i hemen gönderelim."
-                  : "Lassen Sie Ihre E-Mail da, wir senden die PDF sofort."}
+{t.ui.leadFormSub}
               </p>
               <LeadMagnetForm />
             </div>
@@ -254,17 +250,13 @@ export function Home() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <SectionEyebrow>
-              {lang === "tr" ? "Türkiye geneli" : "Türkeiweit"}
+              {t.ui.turkeyWide}
             </SectionEyebrow>
             <SectionTitle>
-              {lang === "tr"
-                ? "Hizmet bölgelerimiz Türkiye'nin sanayi merkezlerini kapsar"
-                : "Unsere Servicegebiete decken die türkischen Industriezentren ab"}
+{t.ui.serviceAreaTitle}
             </SectionTitle>
             <p className="mt-5 text-anthracite/80 leading-relaxed">
-              {lang === "tr"
-                ? "Vaihingen ofisimizden uçakla 4 saatlik mesafede tüm büyük metal ve makine imalatı OSB'lerine ulaşıyoruz. Yerinde değerlendirme, fabrika ziyareti ve audit hazırlığı için sahaya geliyoruz."
-                : "Von unserem Standort in Vaihingen aus erreichen wir alle wichtigen Industrie- und Maschinenbauzonen der Türkei in 4 Flugstunden. Wir kommen vor Ort für Bewertungen, Werksbesuche und Audit-Vorbereitungen."}
+{t.ui.serviceAreaDesc}
             </p>
           </div>
 
